@@ -2,6 +2,7 @@ require 'active_model/validations'
 module ActiveConformity
   class DynamicValidator
      include ActiveModel::Validations
+     include ActiveConformity::CustomValidationMethods
      attr_reader :obj
 
      def initialize(obj)

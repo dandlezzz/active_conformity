@@ -66,6 +66,7 @@ module ActiveConformity
     def call_validation_method(attr, rule)
       if attr == "method"
         add_custom_validations
+        rule = [rule].flatten
         @validator_klass.validate rule.shift.to_sym, rule
       else
         @validator_klass.validates attr.to_sym, reify_rule(rule)

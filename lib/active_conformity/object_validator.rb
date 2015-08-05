@@ -22,7 +22,7 @@ module ActiveConformity
   class ObjectValidator
     include ActiveConformity::Reifiers
 
-    attr_accessor :validation_set, :errors, :validation_results, :obj, :validator_klass, :valid
+    attr_accessor :validation_set, :errors, :validation_results, :obj, :validator_klass, :valid, :method_args
 
     def initialize(obj, validation_set)
       @obj = obj
@@ -67,7 +67,11 @@ module ActiveConformity
       if attr == "method"
         add_custom_validations
         rule = [rule].flatten
-        @validator_klass.validate rule[0].to_sym
+        if rule.length > 1
+          @validator_klass.validate rule[0].to_sym, rule[1..-1]
+        else
+          @validator_klass.validate rule[0].to_sym
+        end
       else
         @validator_klass.validates attr.to_sym, reify_rule(rule)
       end

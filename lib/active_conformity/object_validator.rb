@@ -56,7 +56,7 @@ module ActiveConformity
         call_validation_method(attr, rule)
       end
       validator = @validator_klass.new(@obj)
-      if @validation_set["method"].length > 1
+      if @validation_set["method"] && @validation_set["method"].length > 1
         validator.method_args = @validation_set["method"][1..-1]
       end
       @valid = validator.valid?

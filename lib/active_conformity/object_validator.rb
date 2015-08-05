@@ -3,6 +3,7 @@ module ActiveConformity
   class DynamicValidator
      include ActiveModel::Validations
      attr_reader :obj
+     attr_accessor :method_args
 
      def initialize(obj)
         @obj = obj
@@ -55,6 +56,9 @@ module ActiveConformity
         call_validation_method(attr, rule)
       end
       validator = @validator_klass.new(@obj)
+      if @validation_set["method"].length > 1
+        validator.method_args = @validation_set["method"][1..-1]
+      end
       @valid = validator.valid?
       @errors = validator.errors
     end
@@ -67,11 +71,8 @@ module ActiveConformity
       if attr == "method"
         add_custom_validations
         rule = [rule].flatten
-        if rule.length > 1
-          @validator_klass.validate rule[0].to_sym, rule[1..-1]
-        else
-          @validator_klass.validate rule[0].to_sym
-        end
+
+        @validator_klass.validate rule[0].to_sym
       else
         @validator_klass.validates attr.to_sym, reify_rule(rule)
       end

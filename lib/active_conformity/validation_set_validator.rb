@@ -11,7 +11,7 @@ module ActiveModel
         @conformable = conformable
         return false unless validation_set_value.is_a? Hash
         validation_set_value.each do |attribute, value|
-          return true if attribute == "method" and value.is_a?(String)
+          return true if attribute == "method" && (value.is_a?(Array) || value.is_a?(String))
           return false unless  is_a_conformists_attribute?(attribute)
            value.each do |rule, constraint|
               validation_rule_conforms?(attribute, rule, constraint)

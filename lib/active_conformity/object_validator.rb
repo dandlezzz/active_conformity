@@ -71,7 +71,6 @@ module ActiveConformity
       if attr == "method"
         add_custom_validations
         rule = [rule].flatten
-
         @validator_klass.validate rule[0].to_sym
       else
         @validator_klass.validates attr.to_sym, reify_rule(rule)

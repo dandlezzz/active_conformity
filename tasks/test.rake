@@ -1,7 +1,5 @@
 require 'rspec/core/rake_task'
 
-
-
 task test: ['spec:unit']
 
 RSpec::Core::RakeTask.new(:spec)

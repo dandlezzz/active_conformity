@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 gemspec
 
 group :test do
+  gem 'rails'
+  gem 'byebug'
   gem 'rspec'
   gem 'rspec-rails', '~> 3.1.0'
 end

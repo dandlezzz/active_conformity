@@ -23,14 +23,19 @@ module ActiveConformity
   class ObjectValidator
     include ActiveConformity::Reifiers
 
-    attr_accessor :validation_set, :errors, :validation_results, :obj, :validator_klass, :valid, :method_args
+    attr_accessor :conformity_set, :errors, :validation_results,
+                  :obj, :validator_klass, :conforms, :method_args
 
-    def initialize(obj, validation_set)
+    def initialize(obj, conformity_set)
       @obj = obj
-      @validation_set = HashWithIndifferentAccess.new(validation_set)
-      @errors = {}
+      @conformity_set = ::HashWithIndifferentAccess.new(conformity_set)
       create_validator_klass
-      validate
+    end
+
+    def conforms?
+      @conforms = true if @conformity_set.blank?
+      check_conformity
+      @conforms
     end
 
     def create_validator_klass
@@ -39,32 +44,29 @@ module ActiveConformity
     end
 
     def validation_results
+      # This doesn't seem needed
       [@valid, @errors]
     end
 
-    def valid?
-      @valid
+    def errors
+      check_conformity
+      @errors
     end
 
-    def validate
-      @valid = true if @validation_set.blank?
-      run_validations
-    end
-
-    def run_validations
-      @validation_set.map do |attr,rule|
+    def check_conformity
+      @conformity_set.map do |attr,rule|
         call_validation_method(attr, rule)
       end
       validator = @validator_klass.new(@obj)
-      if @validation_set["method"] && @validation_set["method"].length > 1
-        validator.method_args = @validation_set["method"][1..-1]
+      if @conformity_set["method"] && @conformity_set["method"].length > 1
+        validator.method_args = @conformity_set["method"][1..-1]
       end
-      @valid = validator.valid?
+      @conforms = validator.valid?
       @errors = validator.errors
     end
 
     def reify_rule(rule)
-      reify_regex(rule).deep_symbolize_keys
+      HashWithIndifferentAccess.new reify_regex(rule)
     end
 
     def call_validation_method(attr, rule)

@@ -1,0 +1,1275 @@
+# Logfile created on 2015-08-28 01:16:06 -0700 by logger.rb/47272
+D, [2015-08-28T01:19:05.406524 #93916] DEBUG -- :   [1m[36m (0.8ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:19:05.408124 #93916] DEBUG -- :   [1m[35m (0.7ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:19:05.408425 #93916] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:19:05.409122 #93916] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:19:05.409364 #93916] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:19:05.410043 #93916] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:19:05.410270 #93916] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:19:05.411108 #93916] DEBUG -- :   [1m[35m (0.2ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:19:05.411487 #93916] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:22:27.964000 #93971] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:22:27.972179 #93971] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:22:27.972452 #93971] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:22:27.973444 #93971] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:22:27.973676 #93971] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:22:27.974678 #93971] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:22:27.974923 #93971] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:22:27.975849 #93971] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:22:27.976057 #93971] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:23:28.794024 #94025] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:23:28.799474 #94025] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-08-28T01:23:28.804411 #94025] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:23:28.804776 #94025] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2015-08-28T01:23:28.806468 #94025] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:23:28.806691 #94025] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:23:28.806931 #94025] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:23:28.807278 #94025] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:23:28.807451 #94025] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:23:28.808349 #94025] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:23:28.808614 #94025] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:23:28.808822 #94025] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:23:28.809148 #94025] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:23:28.809305 #94025] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:23:28.810236 #94025] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:23:28.810455 #94025] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:23:28.810644 #94025] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:23:28.810952 #94025] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:23:28.811107 #94025] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:23:28.812229 #94025] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:23:28.812402 #94025] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:23:28.812569 #94025] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:23:28.812884 #94025] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:23:28.813051 #94025] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:23:58.918866 #94061] DEBUG -- :   [1m[36m (1.0ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:23:58.924428 #94061] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-08-28T01:23:58.927688 #94061] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:23:58.927941 #94061] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2015-08-28T01:23:58.929349 #94061] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:23:58.929544 #94061] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:23:58.929732 #94061] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:23:58.930036 #94061] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:23:58.930189 #94061] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:23:58.930967 #94061] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:23:58.931177 #94061] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:23:58.931340 #94061] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:23:58.931614 #94061] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:23:58.931763 #94061] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:23:58.932619 #94061] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:23:58.932826 #94061] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:23:58.933011 #94061] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:23:58.933281 #94061] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:23:58.933433 #94061] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:23:58.934284 #94061] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:23:58.934515 #94061] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:23:58.934677 #94061] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:23:58.934984 #94061] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:23:58.935131 #94061] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:28:28.024355 #94195] DEBUG -- :   [1m[36m (0.6ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:28:28.029864 #94195] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-08-28T01:28:28.035978 #94195] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:28:28.036360 #94195] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2015-08-28T01:28:28.038665 #94195] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:28:28.038935 #94195] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:28:28.039243 #94195] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:28:28.039722 #94195] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:28:28.039922 #94195] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:28:28.040848 #94195] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:28:28.041073 #94195] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:28:28.041303 #94195] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:28:28.041710 #94195] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:28:28.041899 #94195] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:28:28.042805 #94195] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:28:28.042999 #94195] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:28:28.043217 #94195] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:28:28.043600 #94195] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:28:28.043770 #94195] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:28:28.044658 #94195] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:28:28.044850 #94195] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:28:28.045045 #94195] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:28:28.045416 #94195] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:28:28.045574 #94195] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:28:28.047652 #94195] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:28:28.047862 #94195] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:28:28.048088 #94195] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:28:28.048502 #94195] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:28:28.048673 #94195] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:28:51.567564 #94228] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:28:51.573099 #94228] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:28:51.576351 #94228] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:28:51.576625 #94228] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:28:51.577993 #94228] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:28:51.578205 #94228] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:28:51.578412 #94228] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:28:51.578752 #94228] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:28:51.578936 #94228] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:28:51.579711 #94228] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:28:51.579924 #94228] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:28:51.580133 #94228] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:28:51.580429 #94228] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:28:51.580579 #94228] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:28:51.581512 #94228] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:28:51.581684 #94228] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:28:51.581850 #94228] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:28:51.582119 #94228] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:28:51.582266 #94228] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:28:51.583126 #94228] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:28:51.583324 #94228] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:28:51.583489 #94228] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:28:51.583750 #94228] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:28:51.583912 #94228] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:28:51.585450 #94228] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:28:51.585625 #94228] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:28:51.585798 #94228] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:28:51.586092 #94228] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:28:51.586277 #94228] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:30:27.114473 #94286] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:30:27.119247 #94286] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:30:27.122418 #94286] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:30:27.122673 #94286] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:30:27.124086 #94286] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:30:27.124287 #94286] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:30:27.124497 #94286] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:30:27.124902 #94286] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:30:27.125072 #94286] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:30:27.125939 #94286] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:30:27.126123 #94286] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:30:27.126311 #94286] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:30:27.126648 #94286] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:30:27.126882 #94286] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:30:27.128947 #94286] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:30:27.129140 #94286] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:30:27.129349 #94286] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:30:27.129683 #94286] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:30:27.129846 #94286] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:30:27.130776 #94286] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:30:27.130957 #94286] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:30:27.131183 #94286] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:30:27.131484 #94286] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:30:27.131632 #94286] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:30:27.133067 #94286] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:30:27.133273 #94286] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:30:27.133449 #94286] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:30:27.133729 #94286] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:30:27.133876 #94286] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:30:51.558784 #94319] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:30:51.562943 #94319] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:30:51.565685 #94319] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:30:51.565899 #94319] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:30:51.567236 #94319] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:30:51.567431 #94319] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:30:51.567627 #94319] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:30:51.567983 #94319] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:30:51.568134 #94319] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:30:51.568885 #94319] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:30:51.569057 #94319] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:30:51.569214 #94319] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:30:51.569507 #94319] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:30:51.569647 #94319] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:30:51.570765 #94319] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:30:51.570936 #94319] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:30:51.571138 #94319] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:30:51.571407 #94319] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:30:51.571550 #94319] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:30:51.572491 #94319] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:30:51.572748 #94319] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:30:51.572976 #94319] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:30:51.573438 #94319] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:30:51.573651 #94319] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:30:51.575275 #94319] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:30:51.575500 #94319] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:30:51.575697 #94319] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:30:51.575996 #94319] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:30:51.576146 #94319] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:31:10.140029 #94350] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:31:10.145521 #94350] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:31:10.148488 #94350] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:31:10.148729 #94350] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:31:10.150108 #94350] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:31:10.150302 #94350] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:31:10.150552 #94350] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:31:10.150919 #94350] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:31:10.151089 #94350] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:31:10.151977 #94350] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:31:10.152159 #94350] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:31:10.152356 #94350] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:31:10.152768 #94350] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:31:10.152926 #94350] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:31:10.154128 #94350] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:31:10.154342 #94350] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:31:10.154530 #94350] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:31:10.154848 #94350] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:31:10.154997 #94350] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:31:10.155890 #94350] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:31:10.156063 #94350] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:31:10.156227 #94350] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:31:10.156537 #94350] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:31:10.156684 #94350] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:31:10.158462 #94350] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:31:10.158647 #94350] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:31:10.158891 #94350] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:31:10.159401 #94350] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:31:10.159585 #94350] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:31:39.945039 #94387] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:31:39.949642 #94387] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:31:39.952400 #94387] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:31:39.952610 #94387] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:31:39.954008 #94387] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:31:39.954202 #94387] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:31:39.954553 #94387] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:31:39.954947 #94387] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:31:39.955114 #94387] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:31:39.956221 #94387] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:31:39.956528 #94387] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:31:39.956828 #94387] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:31:39.957368 #94387] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:31:39.957535 #94387] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:31:39.959123 #94387] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:31:39.959430 #94387] DEBUG -- :   [1m[35m (0.2ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:31:39.959755 #94387] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:31:39.960353 #94387] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:31:39.960586 #94387] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:31:39.961516 #94387] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:31:39.961739 #94387] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:31:39.961945 #94387] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:31:39.962298 #94387] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:31:39.962464 #94387] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:31:39.964040 #94387] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:31:39.964223 #94387] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:31:39.964422 #94387] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:31:39.964826 #94387] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:31:39.964987 #94387] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:33:19.359690 #94439] DEBUG -- :   [1m[36m (1.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:33:19.364654 #94439] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:33:19.367400 #94439] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:33:19.367605 #94439] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:33:19.368996 #94439] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:33:19.369186 #94439] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:33:19.369429 #94439] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:33:19.369732 #94439] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:33:19.369882 #94439] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:33:19.370654 #94439] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:33:19.370819 #94439] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:33:19.371013 #94439] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:33:19.371356 #94439] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:33:19.371504 #94439] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:33:19.372608 #94439] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:33:19.372787 #94439] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:33:19.373021 #94439] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:33:19.373330 #94439] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:33:19.373482 #94439] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:33:19.374341 #94439] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:33:19.374516 #94439] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:33:19.374697 #94439] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:33:19.375099 #94439] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:33:19.375260 #94439] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:33:19.376802 #94439] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:33:19.376992 #94439] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:33:19.377325 #94439] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:33:19.377858 #94439] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:33:19.378121 #94439] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:33:38.500282 #94471] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:33:38.504955 #94471] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:33:38.507826 #94471] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:33:38.508217 #94471] DEBUG -- :   [1m[35m (0.2ms)[0m  commit transaction
+D, [2015-08-28T01:33:38.509974 #94471] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:33:38.510197 #94471] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:33:38.510618 #94471] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:33:38.511284 #94471] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:33:38.511596 #94471] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:33:38.512834 #94471] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:33:38.513147 #94471] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:33:38.513418 #94471] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:33:38.513877 #94471] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:33:38.514104 #94471] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:33:38.515728 #94471] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:33:38.515959 #94471] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:33:38.516204 #94471] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:33:38.516664 #94471] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:33:38.516870 #94471] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:33:38.517906 #94471] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:33:38.518134 #94471] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:33:38.518368 #94471] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:33:38.518794 #94471] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:33:38.518971 #94471] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:33:38.520610 #94471] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:33:38.520824 #94471] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:33:38.521048 #94471] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:33:38.521420 #94471] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:33:38.521631 #94471] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:33:52.771353 #94502] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:33:52.776085 #94502] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-08-28T01:33:52.779493 #94502] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:33:52.779849 #94502] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:33:52.781460 #94502] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:33:52.781778 #94502] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:33:52.782066 #94502] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:33:52.782525 #94502] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:33:52.782788 #94502] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:33:52.783816 #94502] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:33:52.784077 #94502] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:33:52.784320 #94502] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:33:52.784724 #94502] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:33:52.784915 #94502] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:33:52.786266 #94502] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:33:52.786488 #94502] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:33:52.786712 #94502] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:33:52.787074 #94502] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:33:52.787325 #94502] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:33:52.788230 #94502] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:33:52.788462 #94502] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:33:52.788659 #94502] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:33:52.789020 #94502] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:33:52.789196 #94502] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:33:52.790852 #94502] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:33:52.791054 #94502] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:33:52.791267 #94502] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:33:52.791658 #94502] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:33:52.791828 #94502] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:34:12.643150 #94538] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:34:12.647584 #94538] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:34:12.650293 #94538] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:34:12.650494 #94538] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:34:12.651812 #94538] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:34:12.652002 #94538] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:34:12.652184 #94538] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:34:12.652474 #94538] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:34:12.652655 #94538] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:34:12.653489 #94538] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:34:12.653726 #94538] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:34:12.653926 #94538] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:34:12.654452 #94538] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:34:12.654715 #94538] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2015-08-28T01:34:27.866761 #94538] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:34:27.867861 #94538] DEBUG -- :   [1m[35m (0.3ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:34:27.869942 #94538] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:34:27.873448 #94538] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:34:27.875238 #94538] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:34:27.884216 #94538] DEBUG -- :   [1m[35m (0.3ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:34:27.885257 #94538] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:34:27.886993 #94538] DEBUG -- :   [1m[35m (0.2ms)[0m  begin transaction
+D, [2015-08-28T01:34:27.889901 #94538] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:34:27.891706 #94538] DEBUG -- :   [1m[35m (0.2ms)[0m  commit transaction
+D, [2015-08-28T01:34:28.942807 #94538] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:34:28.944086 #94538] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:34:28.946219 #94538] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:34:28.949358 #94538] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:34:28.951248 #94538] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:36:20.974875 #94603] DEBUG -- :   [1m[36m (1.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:36:20.979595 #94603] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:36:20.982566 #94603] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:36:20.982807 #94603] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:36:20.984253 #94603] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:36:20.984460 #94603] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:36:20.984779 #94603] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:36:20.985199 #94603] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:36:20.985374 #94603] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:36:20.986160 #94603] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:36:20.986356 #94603] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:36:20.986531 #94603] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:36:20.986925 #94603] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:36:20.987093 #94603] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:36:20.988245 #94603] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:36:20.988461 #94603] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:36:20.988639 #94603] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:36:20.988978 #94603] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:36:20.989298 #94603] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:36:20.990341 #94603] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:36:20.990593 #94603] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:36:20.990801 #94603] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:36:20.991172 #94603] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:36:20.991334 #94603] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:36:20.992753 #94603] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:36:20.992930 #94603] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:36:20.993144 #94603] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:36:20.993478 #94603] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:36:20.993635 #94603] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:36:32.891216 #94634] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:36:32.896553 #94634] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:36:32.899391 #94634] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:36:32.899654 #94634] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:36:32.901080 #94634] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:36:32.901304 #94634] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:36:32.901528 #94634] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:36:32.901913 #94634] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:36:32.902113 #94634] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:36:32.902948 #94634] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:36:32.903149 #94634] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:36:32.903345 #94634] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:36:32.903692 #94634] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:36:32.903855 #94634] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:36:32.905219 #94634] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:36:32.905436 #94634] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:36:32.905636 #94634] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:36:32.906007 #94634] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:36:32.906167 #94634] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:36:32.907111 #94634] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:36:32.907298 #94634] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:36:32.907484 #94634] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:36:32.907795 #94634] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:36:32.907993 #94634] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2015-08-28T01:36:32.909714 #94634] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:36:32.909923 #94634] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:36:32.910151 #94634] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:36:32.910595 #94634] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:36:32.910781 #94634] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:37:03.364758 #94673] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:37:03.370268 #94673] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:37:03.373226 #94673] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:37:03.373506 #94673] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:37:03.375055 #94673] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:37:03.375315 #94673] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:37:03.375554 #94673] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:37:03.375958 #94673] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:37:03.376153 #94673] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:37:03.376911 #94673] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:37:03.377100 #94673] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:37:03.377292 #94673] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:37:03.377648 #94673] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:37:03.377805 #94673] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:37:03.379003 #94673] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:37:03.379192 #94673] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:37:03.379397 #94673] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:37:03.379784 #94673] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:37:03.379981 #94673] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:37:03.381022 #94673] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:37:03.381248 #94673] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:37:03.381469 #94673] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:37:03.381803 #94673] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:37:03.381958 #94673] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:37:03.383480 #94673] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:37:03.383671 #94673] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:37:03.383872 #94673] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:37:03.384215 #94673] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:37:03.384366 #94673] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:38:38.292022 #94720] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:38:38.297455 #94720] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-08-28T01:38:38.300498 #94720] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:38:38.300761 #94720] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:38:38.302214 #94720] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:38:38.302471 #94720] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:38:38.302755 #94720] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:38:38.303177 #94720] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:38:38.303358 #94720] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:38:38.304277 #94720] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:38:38.304741 #94720] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:38:38.305097 #94720] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:38:38.305647 #94720] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:38:38.305873 #94720] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:38:38.307507 #94720] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:38:38.307709 #94720] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:38:38.307925 #94720] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:38:38.308309 #94720] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:38:38.308472 #94720] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:38:38.309352 #94720] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:38:38.309535 #94720] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:38:38.309723 #94720] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:38:38.310037 #94720] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:38:38.310189 #94720] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:38:38.311699 #94720] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:38:38.311927 #94720] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:38:38.312141 #94720] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:38:38.312540 #94720] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:38:38.312703 #94720] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:38:49.315077 #94751] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:38:49.319297 #94751] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:38:49.321973 #94751] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:38:49.322278 #94751] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2015-08-28T01:38:49.323928 #94751] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:38:49.324227 #94751] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:38:49.324433 #94751] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:38:49.324778 #94751] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:38:49.324967 #94751] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:38:49.325768 #94751] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:38:49.325935 #94751] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:38:49.326093 #94751] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:38:49.326356 #94751] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:38:49.326557 #94751] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2015-08-28T01:38:49.327697 #94751] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:38:49.327866 #94751] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:38:49.328029 #94751] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:38:49.328347 #94751] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:38:49.328489 #94751] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:38:49.329329 #94751] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:38:49.329494 #94751] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:38:49.329714 #94751] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:38:49.329966 #94751] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:38:49.330144 #94751] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2015-08-28T01:38:49.331490 #94751] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:38:49.331658 #94751] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:38:49.331818 #94751] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:38:49.332116 #94751] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:38:49.332259 #94751] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:39:23.604326 #94784] DEBUG -- :   [1m[36m (1.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:39:23.609584 #94784] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:39:23.612275 #94784] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:39:23.612484 #94784] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:39:23.613800 #94784] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:39:23.613978 #94784] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:39:23.614198 #94784] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:39:23.614518 #94784] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:39:23.614662 #94784] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:39:23.615417 #94784] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:39:23.615580 #94784] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:39:23.615735 #94784] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:39:23.615985 #94784] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:39:23.616154 #94784] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:39:23.617893 #94784] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:39:23.618102 #94784] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:39:23.618305 #94784] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:39:23.618591 #94784] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:39:23.618735 #94784] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:39:23.619587 #94784] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:39:23.619756 #94784] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:39:23.619910 #94784] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:39:23.620203 #94784] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:39:23.620341 #94784] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:39:23.621721 #94784] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:39:23.621917 #94784] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:39:23.622082 #94784] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:39:23.622340 #94784] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:39:23.622486 #94784] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:39:51.806542 #94820] DEBUG -- :   [1m[36m (0.6ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:39:51.812365 #94820] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-08-28T01:39:51.815585 #94820] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:39:51.815840 #94820] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:39:51.817439 #94820] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:39:51.817715 #94820] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:39:51.817943 #94820] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:39:51.818320 #94820] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:39:51.818498 #94820] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:39:51.819484 #94820] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:39:51.819668 #94820] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:39:51.819892 #94820] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:39:51.820238 #94820] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:39:51.820397 #94820] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:39:51.821648 #94820] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:39:51.821832 #94820] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:39:51.822041 #94820] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:39:51.822407 #94820] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:39:51.822608 #94820] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:39:51.823782 #94820] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:39:51.824059 #94820] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:39:51.824422 #94820] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-08-28T01:39:51.824854 #94820] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:39:51.825088 #94820] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:39:51.826958 #94820] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:39:51.827200 #94820] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:39:51.827453 #94820] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:39:51.827866 #94820] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:39:51.828079 #94820] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:40:07.466876 #94863] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:40:07.472091 #94863] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:40:07.475220 #94863] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:40:07.475513 #94863] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:40:07.477213 #94863] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:40:07.477420 #94863] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:40:07.477644 #94863] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:40:07.478062 #94863] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:40:07.478263 #94863] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:40:07.479096 #94863] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:40:07.479280 #94863] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:40:07.479470 #94863] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:40:07.479806 #94863] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:40:07.479996 #94863] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:44:22.204395 #94863] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:44:22.205624 #94863] DEBUG -- :   [1m[35m (0.3ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:44:22.207762 #94863] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:44:22.210963 #94863] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:44:22.212573 #94863] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:44:22.216795 #94863] DEBUG -- :   [1m[35m (0.2ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:44:22.221043 #94863] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:44:22.223790 #94863] DEBUG -- :   [1m[35m (0.5ms)[0m  begin transaction
+D, [2015-08-28T01:44:22.228455 #94863] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:44:22.230415 #94863] DEBUG -- :   [1m[35m (0.2ms)[0m  commit transaction
+D, [2015-08-28T01:44:22.238664 #94863] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:44:22.240062 #94863] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:44:22.241973 #94863] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:44:22.244793 #94863] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:44:22.246695 #94863] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:46:05.962100 #94980] DEBUG -- :   [1m[36m (0.7ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:46:05.969305 #94980] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-08-28T01:46:05.974411 #94980] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:05.974784 #94980] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2015-08-28T01:46:05.977160 #94980] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:46:05.977396 #94980] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:46:05.977640 #94980] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:46:05.978001 #94980] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:05.978226 #94980] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:46:05.979038 #94980] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:46:05.979234 #94980] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:46:05.979390 #94980] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:46:05.979650 #94980] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:05.979792 #94980] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:46:05.981785 #94980] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:46:05.981972 #94980] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:46:05.982191 #94980] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:46:05.982489 #94980] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:05.982649 #94980] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:46:05.983505 #94980] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:46:05.983680 #94980] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:46:05.983838 #94980] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:46:05.984138 #94980] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:05.984284 #94980] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:46:05.985705 #94980] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:46:05.985914 #94980] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:46:05.986113 #94980] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:46:05.986428 #94980] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:05.986578 #94980] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:46:16.462034 #95008] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:46:16.467538 #95008] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:46:16.470462 #95008] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:16.470660 #95008] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:46:16.471990 #95008] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:46:16.472168 #95008] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:46:16.472346 #95008] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:46:16.472654 #95008] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:16.472803 #95008] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:46:16.473560 #95008] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:46:16.473747 #95008] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:46:16.473903 #95008] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:46:16.474164 #95008] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:16.474303 #95008] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:46:16.476640 #95008] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:46:16.476931 #95008] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:46:16.477175 #95008] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:46:16.477624 #95008] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:16.477815 #95008] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:46:16.478853 #95008] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:46:16.479030 #95008] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:46:16.479202 #95008] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:46:16.479521 #95008] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:16.479663 #95008] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:46:16.481111 #95008] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:46:16.481282 #95008] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:46:16.481487 #95008] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:46:16.481751 #95008] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:16.481898 #95008] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:46:20.927786 #95035] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:46:20.932160 #95035] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:46:20.934811 #95035] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:20.935010 #95035] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:46:20.936545 #95035] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:46:20.936856 #95035] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:46:20.937232 #95035] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:46:20.937814 #95035] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:20.938113 #95035] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:46:20.939496 #95035] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:46:20.939827 #95035] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:46:20.940233 #95035] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-08-28T01:46:20.940672 #95035] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:20.940893 #95035] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:46:20.943523 #95035] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:46:20.943781 #95035] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:46:20.944032 #95035] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:46:20.944515 #95035] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:20.944715 #95035] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:46:20.945801 #95035] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:46:20.946042 #95035] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:46:20.946267 #95035] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:46:20.946631 #95035] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:20.946889 #95035] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2015-08-28T01:46:20.948495 #95035] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:46:20.948702 #95035] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:46:20.948907 #95035] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:46:20.949250 #95035] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:20.949416 #95035] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:46:35.963156 #95067] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:46:35.967435 #95067] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:46:35.970110 #95067] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:35.970309 #95067] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:46:35.971609 #95067] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:46:35.971787 #95067] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:46:35.971965 #95067] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:46:35.972275 #95067] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:35.972426 #95067] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:46:35.973195 #95067] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:46:35.973364 #95067] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:46:35.973520 #95067] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:46:35.973959 #95067] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:35.974127 #95067] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:46:35.976348 #95067] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:46:35.976585 #95067] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:46:35.977032 #95067] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:46:35.977519 #95067] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:35.977681 #95067] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:46:35.978748 #95067] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:46:35.978933 #95067] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:46:35.979110 #95067] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:46:35.979454 #95067] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:46:35.979598 #95067] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:47:52.306353 #95107] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:47:52.311361 #95107] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-08-28T01:47:52.314464 #95107] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:47:52.314682 #95107] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:47:52.316035 #95107] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:47:52.316223 #95107] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:47:52.316450 #95107] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:47:52.316764 #95107] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:47:52.316914 #95107] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:47:52.317795 #95107] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:47:52.317970 #95107] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:47:52.318133 #95107] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:47:52.318430 #95107] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:47:52.318575 #95107] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:47:52.319394 #95107] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:47:52.319566 #95107] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:47:52.319755 #95107] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:47:52.320012 #95107] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:47:52.320178 #95107] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:48:25.161888 #95188] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:48:25.166505 #95188] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:48:25.169605 #95188] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:48:25.169895 #95188] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:48:25.171400 #95188] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:48:25.171608 #95188] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:48:25.171823 #95188] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:48:25.172227 #95188] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:48:25.172394 #95188] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:48:25.173390 #95188] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:48:25.173567 #95188] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:48:25.173737 #95188] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:48:25.174019 #95188] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:48:25.174202 #95188] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:48:25.175423 #95188] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:48:25.175690 #95188] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:48:25.176015 #95188] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:48:25.176364 #95188] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:48:25.176552 #95188] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:48:25.178123 #95188] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:48:25.178351 #95188] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:48:25.178640 #95188] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-08-28T01:48:25.179060 #95188] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:48:25.179268 #95188] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2015-08-28T01:48:44.051615 #95219] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:48:44.057171 #95219] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:48:44.060273 #95219] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:48:44.060564 #95219] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:48:44.062012 #95219] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:48:44.062278 #95219] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:48:44.062497 #95219] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:48:44.062876 #95219] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:48:44.063078 #95219] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:48:44.064125 #95219] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:48:44.064320 #95219] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:48:44.064516 #95219] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:48:44.064875 #95219] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:48:44.065068 #95219] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2015-08-28T01:48:44.066007 #95219] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:48:44.066190 #95219] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:48:44.066379 #95219] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:48:44.066723 #95219] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:48:44.066908 #95219] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:48:44.068410 #95219] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:48:44.068633 #95219] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:48:44.068823 #95219] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:48:44.069159 #95219] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:48:44.069319 #95219] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:48:54.180677 #95251] DEBUG -- :   [1m[36m (1.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:48:54.186891 #95251] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:48:54.190482 #95251] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:48:54.190735 #95251] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:48:54.192173 #95251] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:48:54.192387 #95251] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:48:54.192579 #95251] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:48:54.192893 #95251] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:48:54.193041 #95251] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:48:54.193938 #95251] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:48:54.194105 #95251] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:48:54.194304 #95251] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:48:54.194562 #95251] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:48:54.194707 #95251] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:48:54.195592 #95251] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:48:54.195759 #95251] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:48:54.195917 #95251] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:48:54.196211 #95251] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:48:54.196355 #95251] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:48:54.197811 #95251] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:48:54.197982 #95251] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:48:54.198143 #95251] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:48:54.198409 #95251] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:48:54.198587 #95251] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:49:19.310929 #95291] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:49:19.315679 #95291] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:49:19.318464 #95291] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:49:19.318721 #95291] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2015-08-28T01:49:19.320102 #95291] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:49:19.320295 #95291] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:49:19.320503 #95291] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:49:19.320855 #95291] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:49:19.321059 #95291] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:49:19.322029 #95291] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:49:19.322209 #95291] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:49:19.322396 #95291] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:49:19.322726 #95291] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:49:19.322914 #95291] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:49:19.324029 #95291] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:49:19.324299 #95291] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:49:19.324600 #95291] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:49:19.325219 #95291] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:49:19.325515 #95291] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:49:19.328042 #95291] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:49:19.328302 #95291] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:49:19.328611 #95291] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:49:19.329061 #95291] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:49:19.329280 #95291] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:49:48.944095 #95324] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:49:48.948503 #95324] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:49:48.951397 #95324] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:49:48.951605 #95324] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:51:04.941723 #95377] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:51:04.945998 #95377] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:51:04.948709 #95377] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:51:04.948956 #95377] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2015-08-28T01:51:04.950389 #95377] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:51:04.950576 #95377] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:51:04.950764 #95377] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:51:04.951071 #95377] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:51:04.951254 #95377] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:51:04.952093 #95377] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:51:04.952271 #95377] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:51:04.952441 #95377] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:51:04.952744 #95377] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:51:04.952900 #95377] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:51:04.954040 #95377] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:51:04.954238 #95377] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:51:04.954447 #95377] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:51:04.954719 #95377] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:51:04.954892 #95377] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:51:04.956886 #95377] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:51:04.957095 #95377] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:51:04.957301 #95377] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:51:04.957671 #95377] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:51:04.957847 #95377] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:51:35.491848 #95415] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:51:35.496626 #95415] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:51:35.499681 #95415] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:51:35.499993 #95415] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T01:51:35.501940 #95415] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:51:35.502187 #95415] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:51:35.502440 #95415] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:51:35.502864 #95415] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:51:35.503112 #95415] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:51:35.504218 #95415] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:51:35.504454 #95415] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:51:35.504821 #95415] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:51:35.505228 #95415] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:51:35.505439 #95415] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2015-08-28T01:51:35.506703 #95415] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T01:51:35.506965 #95415] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T01:51:35.507225 #95415] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T01:51:35.507605 #95415] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:51:35.507799 #95415] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T01:51:35.509037 #95415] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T01:51:35.509263 #95415] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T01:51:35.509482 #95415] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T01:51:35.510003 #95415] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T01:51:35.510206 #95415] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:33:15.911531 #97713] DEBUG -- :   [1m[36m (0.7ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:33:15.918027 #97713] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-08-28T11:33:15.922747 #97713] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T11:33:15.923116 #97713] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:33:15.926198 #97713] DEBUG -- :   [1m[36m (0.8ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:33:15.926559 #97713] DEBUG -- :   [1m[35m (0.2ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:33:15.926851 #97713] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:33:15.927266 #97713] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T11:33:15.927461 #97713] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:33:15.928650 #97713] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:33:15.928863 #97713] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:33:15.929041 #97713] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:33:15.929323 #97713] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T11:33:15.929481 #97713] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:33:15.930354 #97713] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:33:15.930555 #97713] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:33:15.930718 #97713] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:33:15.930972 #97713] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T11:33:15.931112 #97713] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:33:15.932064 #97713] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:33:15.932234 #97713] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:33:15.932421 #97713] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:33:15.932684 #97713] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T11:33:15.932828 #97713] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:33:25.831539 #97741] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:33:25.835672 #97741] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:33:25.838381 #97741] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T11:33:25.838599 #97741] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:33:25.839938 #97741] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:33:25.840177 #97741] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:33:25.840423 #97741] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:33:25.840756 #97741] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T11:33:25.840907 #97741] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:33:25.841765 #97741] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:33:25.841941 #97741] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:33:25.842125 #97741] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:33:25.842390 #97741] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T11:33:25.842624 #97741] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:33:25.843451 #97741] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:33:25.843705 #97741] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:33:25.843877 #97741] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:33:25.844199 #97741] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T11:33:25.844356 #97741] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:33:25.845381 #97741] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:33:25.845553 #97741] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:33:25.845752 #97741] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:33:25.846044 #97741] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T11:33:25.846188 #97741] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:34:32.622656 #97790] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:34:32.628521 #97790] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-08-28T11:34:32.631808 #97790] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T11:34:32.632039 #97790] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:34:32.633561 #97790] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:34:32.633777 #97790] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:34:32.634013 #97790] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:34:32.634347 #97790] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T11:34:32.634504 #97790] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:34:32.635443 #97790] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:34:32.635650 #97790] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:34:32.635810 #97790] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:34:32.636091 #97790] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title", "content") VALUES (?, ?)[0m  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T11:34:32.636234 #97790] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:34:32.637086 #97790] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:34:32.637280 #97790] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:34:32.637440 #97790] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:34:32.637692 #97790] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title", "content") VALUES (?, ?)  [["title", "DumbDumb"], ["content", "Not so dumb?"]]
+D, [2015-08-28T11:34:32.637836 #97790] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:35:15.265490 #97825] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:35:15.270059 #97825] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:35:15.272724 #97825] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:35:15.272927 #97825] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:35:15.274385 #97825] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:35:15.274632 #97825] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:35:15.274863 #97825] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:35:15.275304 #97825] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:35:15.275458 #97825] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:35:15.276377 #97825] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:35:15.276552 #97825] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:35:15.276706 #97825] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:35:15.276967 #97825] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:35:15.277134 #97825] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:35:15.277957 #97825] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:35:15.278127 #97825] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:35:15.278278 #97825] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:35:15.278527 #97825] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:35:15.278671 #97825] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:35:30.252647 #97856] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:35:30.256912 #97856] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:35:30.259700 #97856] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:35:30.259901 #97856] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:35:30.261204 #97856] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:35:30.261387 #97856] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:35:30.261577 #97856] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:35:30.261904 #97856] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:35:30.262045 #97856] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:35:30.262949 #97856] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:35:30.263117 #97856] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:35:30.263255 #97856] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:35:30.263566 #97856] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:35:30.263714 #97856] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:35:30.264544 #97856] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:35:30.264709 #97856] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:35:30.264847 #97856] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:35:30.265123 #97856] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:35:30.265264 #97856] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:36:08.800903 #97912] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:36:08.805400 #97912] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:36:08.809103 #97912] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:36:08.809473 #97912] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2015-08-28T11:36:08.811218 #97912] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:36:08.811471 #97912] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:36:08.811779 #97912] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:36:08.812310 #97912] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:36:08.812515 #97912] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:36:08.813456 #97912] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:36:08.813642 #97912] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:36:08.813833 #97912] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:36:08.814180 #97912] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:36:08.814349 #97912] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:36:08.815286 #97912] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:36:08.815464 #97912] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:36:08.815632 #97912] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:36:08.816004 #97912] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:36:08.816176 #97912] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:36:20.298592 #97943] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:36:20.302919 #97943] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:36:20.305476 #97943] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:36:20.305698 #97943] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:36:20.306978 #97943] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:36:20.307186 #97943] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:36:20.307355 #97943] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:36:20.307636 #97943] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:36:20.307779 #97943] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:36:20.308683 #97943] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:36:20.308932 #97943] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:36:20.309080 #97943] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:36:20.309341 #97943] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:36:20.309511 #97943] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2015-08-28T11:36:20.310359 #97943] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:36:20.310520 #97943] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:36:20.310665 #97943] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:36:20.310915 #97943] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:36:20.311052 #97943] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:36:26.405545 #97973] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:36:26.409790 #97973] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:36:26.412498 #97973] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:36:26.412712 #97973] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:36:26.414033 #97973] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:36:26.414225 #97973] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:36:26.414398 #97973] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:36:26.414731 #97973] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:36:26.414886 #97973] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:36:26.415706 #97973] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:36:26.415882 #97973] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:36:26.416034 #97973] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:36:26.416340 #97973] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:36:26.416491 #97973] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:36:26.417277 #97973] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:36:26.417469 #97973] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:36:26.417650 #97973] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:36:26.417993 #97973] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:36:26.418151 #97973] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:36:50.566089 #98017] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:36:50.570463 #98017] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:36:50.573047 #98017] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:36:50.573310 #98017] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:36:50.574763 #98017] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:36:50.574942 #98017] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:36:50.575114 #98017] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:36:50.575403 #98017] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:36:50.575546 #98017] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:36:50.576417 #98017] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:36:50.576622 #98017] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:36:50.576762 #98017] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:36:50.577000 #98017] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:36:50.577136 #98017] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:36:50.577980 #98017] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:36:50.578179 #98017] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:36:50.578325 #98017] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:36:50.578561 #98017] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:36:50.578699 #98017] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:36:50.580116 #98017] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:36:50.580332 #98017] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:36:50.580482 #98017] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:36:50.580775 #98017] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:36:50.580916 #98017] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:37:11.815289 #98051] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:37:11.820025 #98051] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-08-28T11:37:11.824127 #98051] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:37:11.824450 #98051] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:37:11.826191 #98051] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:37:11.826475 #98051] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:37:11.826709 #98051] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:37:11.827129 #98051] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:37:11.827342 #98051] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:37:11.828417 #98051] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:37:11.828629 #98051] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:37:11.828820 #98051] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:37:11.829185 #98051] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:37:11.829372 #98051] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:37:11.830318 #98051] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:37:11.830541 #98051] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:37:11.830713 #98051] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:37:11.831032 #98051] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:37:11.831195 #98051] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:37:11.832744 #98051] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:37:11.832921 #98051] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:37:11.833093 #98051] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:37:11.833411 #98051] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:37:11.833589 #98051] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:37:19.968628 #98081] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:37:19.973738 #98081] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:37:19.976526 #98081] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:37:19.976831 #98081] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:37:19.978170 #98081] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:37:19.978349 #98081] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:37:19.978516 #98081] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:37:19.978808 #98081] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:37:19.978948 #98081] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:37:19.979877 #98081] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:37:19.980042 #98081] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:37:19.980180 #98081] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:37:19.980423 #98081] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:37:19.980559 #98081] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:37:19.981379 #98081] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:37:19.981575 #98081] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:37:19.981716 #98081] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:37:19.981955 #98081] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:37:19.982092 #98081] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:37:19.983555 #98081] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:37:19.983728 #98081] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:37:19.983879 #98081] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:37:19.984175 #98081] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:37:19.984322 #98081] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:37:51.783001 #98151] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:37:51.787109 #98151] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:37:51.789726 #98151] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:37:51.789920 #98151] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:37:51.791261 #98151] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:37:51.791442 #98151] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:37:51.791605 #98151] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:37:51.791879 #98151] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:37:51.792019 #98151] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:37:51.792888 #98151] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:37:51.793091 #98151] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:37:51.793231 #98151] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:37:51.793627 #98151] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:37:51.793836 #98151] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:37:51.794723 #98151] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:37:51.794889 #98151] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:37:51.795061 #98151] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:37:51.795332 #98151] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:37:51.795470 #98151] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:37:51.796914 #98151] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:37:51.797085 #98151] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:37:51.797234 #98151] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:37:51.797532 #98151] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:37:51.797672 #98151] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:40:44.749205 #98407] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:40:44.754517 #98407] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:40:44.757273 #98407] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:40:44.757473 #98407] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:40:44.758899 #98407] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:40:44.759179 #98407] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:40:44.759481 #98407] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:40:44.759888 #98407] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:40:44.760044 #98407] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:40:44.760955 #98407] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:40:44.761122 #98407] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:40:44.761270 #98407] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:40:44.761565 #98407] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:40:44.761706 #98407] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:40:44.762524 #98407] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:40:44.762691 #98407] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:40:44.762836 #98407] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:40:44.763108 #98407] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:40:44.763249 #98407] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:40:44.764942 #98407] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:40:44.765157 #98407] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:40:44.765358 #98407] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:40:44.765681 #98407] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:40:44.765831 #98407] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:40:44.774872 #98407] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:40:44.775227 #98407] DEBUG -- :   [1m[35m (0.2ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:40:44.775698 #98407] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:40:44.776253 #98407] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:40:44.776477 #98407] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:41:47.273917 #98468] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:41:47.280078 #98468] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:41:47.283395 #98468] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:41:47.283689 #98468] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:41:47.285065 #98468] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:41:47.285245 #98468] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:41:47.285417 #98468] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:41:47.285702 #98468] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:41:47.285871 #98468] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:41:47.286745 #98468] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:41:47.286915 #98468] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:41:47.287057 #98468] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:41:47.287302 #98468] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:41:47.287447 #98468] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:41:47.288318 #98468] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:41:47.288485 #98468] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:41:47.288628 #98468] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:41:47.288867 #98468] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:41:47.289047 #98468] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:41:47.290523 #98468] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:41:47.290693 #98468] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:41:47.290880 #98468] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:41:47.291138 #98468] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:41:47.291281 #98468] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:41:47.301494 #98468] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:41:47.301759 #98468] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:41:47.302133 #98468] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:41:47.302663 #98468] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:41:47.302903 #98468] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:42:18.944586 #98505] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:42:18.949298 #98505] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:42:18.952052 #98505] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:42:18.952266 #98505] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:42:18.953588 #98505] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:42:18.953776 #98505] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:42:18.953946 #98505] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:42:18.954232 #98505] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:42:18.954409 #98505] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:42:18.955271 #98505] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:42:18.955439 #98505] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:42:18.955580 #98505] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:42:18.955823 #98505] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:42:18.955998 #98505] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:42:18.956829 #98505] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:42:18.956995 #98505] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:42:18.957136 #98505] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:42:18.957376 #98505] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:42:18.957556 #98505] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:42:18.959194 #98505] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:42:18.959370 #98505] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:42:18.959560 #98505] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:42:18.959841 #98505] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:42:18.959987 #98505] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:42:18.968403 #98505] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:42:18.968667 #98505] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:42:18.969000 #98505] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:42:18.969451 #98505] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:42:18.969631 #98505] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:42:29.919790 #98539] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:42:29.923980 #98539] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:42:29.926640 #98539] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:42:29.927068 #98539] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2015-08-28T11:42:29.928968 #98539] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:42:29.929305 #98539] DEBUG -- :   [1m[35m (0.2ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:42:29.929613 #98539] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:42:29.930116 #98539] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:42:29.930407 #98539] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:42:29.931835 #98539] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:42:29.932085 #98539] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:42:29.932340 #98539] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:42:29.932715 #98539] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:42:29.932929 #98539] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:42:29.934021 #98539] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:42:29.934271 #98539] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:42:29.934536 #98539] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:42:29.934909 #98539] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:42:29.935124 #98539] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:42:29.936957 #98539] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:42:29.937193 #98539] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:42:29.937425 #98539] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:42:29.937876 #98539] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:42:29.938076 #98539] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:42:29.947117 #98539] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:42:29.947319 #98539] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:42:29.947599 #98539] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:42:29.948067 #98539] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:42:29.948242 #98539] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:43:06.127744 #98586] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:43:06.132042 #98586] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:43:06.134640 #98586] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:43:06.134858 #98586] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:43:06.136166 #98586] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:43:06.136363 #98586] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:43:06.136544 #98586] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:43:06.136814 #98586] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:43:06.136959 #98586] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:43:06.137872 #98586] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:43:06.138042 #98586] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:43:06.138177 #98586] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:43:06.138417 #98586] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:43:06.138557 #98586] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:43:06.139434 #98586] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:43:06.139605 #98586] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:43:06.139742 #98586] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:43:06.139979 #98586] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:43:06.140120 #98586] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:43:06.141540 #98586] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:43:06.141712 #98586] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:43:06.141893 #98586] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-08-28T11:43:06.142152 #98586] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:43:06.142292 #98586] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-08-28T11:43:06.150909 #98586] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDROP TABLE "dummies"[0m
+D, [2015-08-28T11:43:06.151145 #98586] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) 
+D, [2015-08-28T11:43:06.151469 #98586] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-08-28T11:43:06.151992 #98586] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "dummies" ("title") VALUES (?)  [["title", "DumbDumb"]]
+D, [2015-08-28T11:43:06.152169 #98586] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-08-28T11:43:06.154499 #98586] DEBUG -- :   [1m[35m (0.1ms)[0m  DROP TABLE "dummies"
+D, [2015-08-28T11:43:06.154694 #98586] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dummies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar) [0m
+D, [2015-08-28T11:43:06.154858 #98586] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-08-28T11:43:06.155177 #98586] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "dummies" ("title") VALUES (?)[0m  [["title", "DumbDumb"]]
+D, [2015-08-28T11:43:06.155324 #98586] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction

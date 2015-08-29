@@ -33,4 +33,5 @@ RSpec.describe ActiveConformity::ConformableExtensions do
       expect(@dummy.conformable_references).to eq [@dummy_type]
     end
   end
+
 end

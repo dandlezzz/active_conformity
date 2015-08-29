@@ -1,5 +1,12 @@
+require 'active_support/concern'
 module ActiveConformity
   module ConformableExtensions
+    extend Active::SupportConcern
+
+    included do
+      belongs_to :conformable, class_name: "Conformable", polymorphic: true
+    end
+
 
     def conforms?
       ActiveConformity::ObjectValidator.new(self, aggregate_conformity_set).conforms?

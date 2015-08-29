@@ -1,7 +1,7 @@
 require 'active_support/concern'
 module ActiveConformity
   module ConformableExtensions
-    extend Active::SupportConcern
+    extend ActiveSupport::Concern
 
     included do
       belongs_to :conformable, class_name: "Conformable", polymorphic: true

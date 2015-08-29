@@ -40,4 +40,4 @@ module ActiveConformity
   end
 end
 
-ActiveRecord::Base.extend ActiveConformity::ConformableExtensions # need to try this
+ActiveRecord::Base.send(:include,ActiveConformity::ConformableExtensions)

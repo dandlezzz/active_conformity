@@ -62,10 +62,11 @@ module ActiveConformity
     end
 
     def call_validation_method(attr, rule)
+      attr = attr.to_sym
       if attr == :method
         @validator_klass.validate rule.to_sym
       else
-        @validator_klass.validates attr.to_sym, reify_rule(rule)
+        @validator_klass.validates attr, reify_rule(rule)
       end
     end
 

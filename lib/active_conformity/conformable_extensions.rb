@@ -5,6 +5,7 @@ module ActiveConformity
 
     included do
       has_one :conformable, class_name: "Conformable"
+      # this throws weird error
     end
 
 
@@ -27,6 +28,7 @@ module ActiveConformity
     end
 
     def aggregate_conformity_set
+      # still aren't finding custom validation methods
       acs ={}
       conformable_references.each do |c|
         c = ActiveConformity::Conformable.find_by!(conformable_id: c.id, conformable_type: c.class.name).conformity_set
@@ -38,4 +40,4 @@ module ActiveConformity
   end
 end
 
-ActiveRecord::Base.send(:include, ActiveConformity::ConformableExtensions)
+ActiveRecord::Base.extend ActiveConformity::ConformableExtensions # need to try this

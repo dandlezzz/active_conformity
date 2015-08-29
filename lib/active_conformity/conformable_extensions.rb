@@ -4,7 +4,7 @@ module ActiveConformity
     extend ActiveSupport::Concern
 
     included do
-      belongs_to :conformable, class_name: "Conformable", polymorphic: true
+      has_one :conformable, class_name: "Conformable"
     end
 
 
@@ -29,8 +29,8 @@ module ActiveConformity
     def aggregate_conformity_set
       acs ={}
       conformable_references.each do |c|
-        c = ActiveConformity::Conformable.find_by!(conformable_id: c.id, conformable_type: c.class.name)
-        c = JSON.parse(c.conformity_set) if c.conformity_set.is_a?(String)
+        c = ActiveConformity::Conformable.find_by!(conformable_id: c.id, conformable_type: c.class.name).conformity_set
+        c = JSON.parse(c) if c.is_a?(String)
         acs.merge!(c)
       end
       acs

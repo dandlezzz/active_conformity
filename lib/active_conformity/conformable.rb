@@ -10,7 +10,7 @@ module ActiveConformity
     end
 
     def remove_validations(attr)
-      
+      # todo
     end
   end
 end

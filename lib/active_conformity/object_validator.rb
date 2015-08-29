@@ -43,7 +43,6 @@ module ActiveConformity
       add_custom_validations
     end
 
-
     def errors
       check_conformity
       @errors

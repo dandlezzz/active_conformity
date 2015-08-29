@@ -23,7 +23,8 @@ module ActiveConformity
       acs ={}
       conformable_references.each do |c|
         c = ActiveConformity::Conformable.find_by!(conformable_id: c.id, conformable_type: c.class.name)
-        acs.merge!(JSON.parse(c.conformity_set))
+        c = JSON.parse(c.conformity_set) if c.conformity_set.is_a?(String)
+        acs.merge!(c)
       end
       acs
     end

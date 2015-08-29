@@ -1,4 +1,9 @@
-class Dummy < ActiveRecord::Base; end
+class Dummy < ActiveRecord::Base
+  belongs_to :dummy_type
+end
+
+class DummyType < ActiveRecord::Base
+end
 
 module ModelReconstruction
   def reset_class class_name
@@ -24,6 +29,18 @@ module ModelReconstruction
     ActiveRecord::Base.connection.create_table :dummies, force: true do |table|
       table.column :title, :string
       table.column :content, :string
+      table.column :dummy_type_id, :integer
+    end
+
+    ActiveRecord::Base.connection.create_table :dummy_types, force: true do |table|
+      table.column :system_name, :string
+      table.column :name, :string
+    end
+    ActiveRecord::Base.connection.create_table :conformables, force: true do |table|
+      table.column :conformable_type, :string
+      table.column :conformable_id, :integer
+      table.column :conformist_type, :string
+      table.column :conformity_set, :json
     end
   end
 end

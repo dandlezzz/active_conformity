@@ -6,6 +6,25 @@ RSpec.describe ActiveConformity::ObjectValidator do
     @obj = Dummy.create!(title:"DumbDumb")
     @conformity_set =  { content: { presence: true }  }
     @object_validator = ActiveConformity::ObjectValidator.new(@obj,@conformity_set)
+    module ActiveConformity
+      module CustomValidationMethods
+        def content_all_caps?
+          if obj.content == obj.content.upcase
+            return true
+          else
+            errors.add(:content, "is not all caps")
+          end
+        end
+
+        def content_is?(str)
+          if obj.content == str
+            return true
+          else
+            errors.add(:content, "is not #{str}")
+          end
+        end
+      end
+    end
   end
 
   describe "#initialize" do
@@ -36,17 +55,28 @@ RSpec.describe ActiveConformity::ObjectValidator do
       expect(@object_validator.errors.messages).to eq({content: ["can't be blank"]})
     end
 
-    it "provides support for regex validations" do
+    it "provides support for regex validations on failure" do
       @obj.content = "hi there"
       @object_validator.conformity_set = {content: {format: {with: /\d+/} } }
       expect(@object_validator.conforms?).to be false
-
     end
 
-    it "provides support for regex validations" do
+    it "provides support for regex validations on success" do
       @obj.content = "emergency 911"
       @object_validator.conformity_set = {content: {format: {with: /\d+/} } }
       expect(@object_validator.conforms?).to be true
+    end
+
+    it "supports custom validation methods on success" do
+      @object_validator.conformity_set = {method: "content_all_caps?"}
+      @obj.content = "THIS IS GOOD"
+      expect(@object_validator.conforms?).to be true
+    end
+
+    it "supports custom validation methods on failure" do
+      @object_validator.conformity_set = {method: "content_all_caps?"}
+      @obj.content = "THIS IS not GOOD"
+      expect(@object_validator.conforms?).to be false
     end
   end
 end

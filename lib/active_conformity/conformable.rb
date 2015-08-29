@@ -1,29 +1,16 @@
-require 'active_conformity/validation_set_validator'
+require 'active_conformity/conformity_set_validator'
 module ActiveConformity
-  module Conformable
-    extend ActiveSupport::Concern
-    include ActiveModel::Validations
+  class Conformable < ActiveRecord::Base
+    validates :conformity_set, conformity_set: true
 
-    included do
-      validates :validation_set, validation_set: true
+    def add_conformity_set(incoming_set={})
+      self.conformity_set = JSON.parse(self.conformity_set) if self.conformity_set.is_a?(String)
+      conformity_set = self.conformity_set.deep_merge(incoming_set)
+      self.update_column(:conformity_set, conformity_set.to_json)
     end
 
-    module ClassMethods
-      @conformists_names = []
-
-      def conformists_names
-        @conformists_names
-      end
-
-      def conformists(*klass_names)
-        @conformists_names = klass_names
-      end
-    end
-
-    def add_validations(validations={})
-      self.validation_set = {} if self.validation_set.nil?
-      self.validation_set = self.validation_set.deep_merge(validations)
-      self.update_column(:validation_set, self.validation_set)
+    def remove_validations(attr)
+      
     end
   end
 end

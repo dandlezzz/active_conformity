@@ -20,7 +20,8 @@ module ActiveConformity
       Conformable.where(conformist_type: self.class.name )
       .pluck(:conformable_type).uniq.flat_map do |c_type|
         associations.detect do |a|
-          a.klass.name == c_type
+          name = a.klass.name rescue nil # need to understand this too
+          name == c_type
         end
       end.flat_map{|relation| self.send(relation.name) }
     end

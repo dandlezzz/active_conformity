@@ -3,8 +3,8 @@ RSpec.describe ActiveConformity::ObjectValidator do
 
   before do
     rebuild_model
-    @obj = Dummy.create!(title:"DumbDumb")
-    @conformity_set =  { content: { presence: true }  }
+    @obj = Dummy.create!(title:"DumbDumb", views: 2, content: "hello")
+    @conformity_set =  {content: { presence: true }}
     @object_validator = ActiveConformity::ObjectValidator.new(@obj,@conformity_set)
     module ActiveConformity
       module CustomValidationMethods
@@ -54,6 +54,22 @@ RSpec.describe ActiveConformity::ObjectValidator do
       @obj.content = nil
       expect(@object_validator.errors.messages).to eq({content: ["can't be blank"]})
     end
+
+    it "provides support for numericality validations" do
+      @object_validator.conformity_set[:views] = { numericality: { greater_than_or_equal_to: 1} }
+      expect(@object_validator.conforms?).to be true
+    end
+
+    it "provides support for length validations" do
+      @object_validator.conformity_set[:content] = { length: { minimum: 4}}
+      expect(@object_validator.conforms?).to be true
+    end
+
+    it "provides support for length validations" do
+      @object_validator.conformity_set[:content] = { length: { minimum: 99} }
+      expect(@object_validator.conforms?).to be false
+    end
+
 
     it "provides support for regex validations on failure" do
       @obj.content = "hi there"

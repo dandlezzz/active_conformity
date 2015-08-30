@@ -29,6 +29,7 @@ module ModelReconstruction
     ActiveRecord::Base.connection.create_table :dummies, force: true do |table|
       table.column :title, :string
       table.column :content, :string
+      table.column :views, :integer
       table.column :dummy_type_id, :integer
     end
 

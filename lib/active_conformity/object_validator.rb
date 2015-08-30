@@ -1,7 +1,9 @@
 require 'active_model/validations'
+require 'active_conformity/custom_validation_methods'
 module ActiveConformity
   class DynamicValidator
      include ActiveModel::Validations
+     include ActiveConformity::CustomValidationMethods
      attr_reader :obj
 
      def initialize(obj)
@@ -22,12 +24,14 @@ module ActiveConformity
   class ObjectValidator
     include ActiveConformity::Reifiers
 
-    attr_accessor :conformity_set, :errors, :validation_results,
-                  :obj, :validator_klass, :conforms
+    attr_accessor :conformity_set, :errors, :obj,
+                  :validator_klass, :conforms, :validator
+
 
     def initialize(obj, conformity_set)
       @obj = obj
       @conformity_set = ::HashWithIndifferentAccess.new(conformity_set)
+      @errors = {}
       create_validator_klass
     end
 
@@ -40,7 +44,6 @@ module ActiveConformity
     def create_validator_klass
       validator_klass_name = (0...50).map { ('A'..'Z').to_a[rand(26)] }.join
       @validator_klass = Object.const_set(validator_klass_name, Class.new(DynamicValidator))
-      add_custom_validations
     end
 
     def errors
@@ -49,30 +52,19 @@ module ActiveConformity
     end
 
     def check_conformity
-      @conformity_set.map do |attr,rule|
+      @conformity_set.each do |attr,rule|
         call_validation_method(attr, rule)
       end
-      validator = @validator_klass.new(@obj)
-      @conforms = validator.valid?
-      @errors = validator.errors
-    end
-
-    def reify_rule(rule)
-      HashWithIndifferentAccess.new reify_regex(rule)
+      @validator = @validator_klass.new(@obj)
+      @conforms = @validator.valid?
+      @errors = @validator.errors
     end
 
     def call_validation_method(attr, rule)
-      attr = attr.to_sym
-      if attr == :method
+      if attr.to_sym == :method
         @validator_klass.validate rule.to_sym
       else
         @validator_klass.validates attr, reify_rule(rule)
-      end
-    end
-
-    def add_custom_validations
-      @validator_klass.class_eval do
-        include ::ActiveConformity::CustomValidationMethods
       end
     end
   end

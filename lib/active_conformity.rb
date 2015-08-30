@@ -6,4 +6,5 @@ require "active_conformity/conformable"
 require "active_conformity/conformity_set_validator"
 require "active_conformity/conformable_extensions"
 
+
 module ActiveConformity; end

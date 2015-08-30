@@ -55,6 +55,18 @@ RSpec.describe ConformitySetValidator do
     expect(@conformable).to be_valid
   end
 
+  it "should permit the use of length validations" do
+    @conformable.conformity_set =  {content: {length: { minimum: 4}}}.to_json
+    @conformable.save
+    expect(@conformable).to be_valid
+  end
+
+  it "should permit the use of numericality validations" do
+    @conformable.conformity_set =  {content: {numericality: { greater_than_or_equal_to: 1}}}.to_json
+    @conformable.save
+    expect(@conformable).to be_valid
+  end
+
   it "should not allow custom methods that aren't already defined" do
     @conformable.conformity_set = {method: "not_dummy_custom" }.to_json
     @conformable.save

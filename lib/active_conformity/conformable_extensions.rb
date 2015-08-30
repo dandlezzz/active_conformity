@@ -3,12 +3,6 @@ module ActiveConformity
   module ConformableExtensions
     extend ActiveSupport::Concern
 
-    included do
-      has_one :conformable, class_name: "Conformable"
-      # this throws weird error
-    end
-
-
     def conforms?
       ActiveConformity::ObjectValidator.new(self, aggregate_conformity_set).conforms?
     end
@@ -17,14 +11,18 @@ module ActiveConformity
       ActiveConformity::ObjectValidator.new(self, aggregate_conformity_set).errors.messages
     end
 
+    def associations
+      @associations ||= self.class.reflect_on_all_associations
+      @associations
+    end
+
     def conformable_references
-      self.class.reflect_on_all_associations
-      .select do |reflection|
-        ActiveConformity::Conformable.where(conformist_type: self.class.name )
-        .pluck(:conformable_type).uniq
-        .include?(reflection.klass.name) rescue nil
-      end
-      .flat_map{|relation| self.send(relation.name) }
+      Conformable.where(conformist_type: self.class.name )
+      .pluck(:conformable_type).uniq.flat_map do |c_type|
+        associations.detect do |a|
+          a.klass.name == c_type
+        end
+      end.flat_map{|relation| self.send(relation.name) }
     end
 
     def aggregate_conformity_set
@@ -41,4 +39,4 @@ module ActiveConformity
   end
 end
 
-ActiveRecord::Base.send(:include,ActiveConformity::ConformableExtensions)
+ActiveRecord::Base.send(:include, ActiveConformity::ConformableExtensions)

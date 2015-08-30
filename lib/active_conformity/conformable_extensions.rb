@@ -23,8 +23,8 @@ module ActiveConformity
         ActiveConformity::Conformable.where(conformist_type: self.class.name )
         .pluck(:conformable_type).uniq
         .include?(reflection.klass.name) rescue nil
-      end.map(&:name)
-      .flat_map{|relation_name| self.send(relation_name) }
+      end
+      .flat_map{|relation| self.send(relation_name.name) }
     end
 
     def aggregate_conformity_set

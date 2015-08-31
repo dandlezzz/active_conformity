@@ -27,6 +27,11 @@ RSpec.describe ConformitySetValidator do
     expect(ConformitySetValidator.superclass).to eq ActiveModel::EachValidator
   end
 
+  it "should not be valid if no conformity set is passed in" do
+    @conformable.conformity_set = nil
+    expect(@conformable.valid?).to be false
+  end
+
   it "should validate the conformables conformity set when valid" do
     expect(@conformable).to be_valid
   end

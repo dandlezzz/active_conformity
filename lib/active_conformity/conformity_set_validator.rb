@@ -7,6 +7,7 @@ class ConformitySetValidator < ActiveModel::EachValidator
 
   def validate_each(conformable, conformity_set, conformity_set_value)
     @conformable = conformable
+    return add_errors("Conformity set required!") if conformity_set_value.nil?
     begin
       if conformity_set_value.is_a? String
         conformity_set_value = JSON.parse(conformity_set_value)

@@ -31,7 +31,7 @@ module ActiveConformity
     def conformable_references
       self.class.reflect_on_all_associations.map do |assoc|
         self.send(assoc.name) if conformable_types.include?(assoc.klass.name) rescue nil
-      end
+      end.flatten.compact.uniq
     end
 
     def conformable_types

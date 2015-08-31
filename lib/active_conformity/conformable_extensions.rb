@@ -4,38 +4,46 @@ module ActiveConformity
     extend ActiveSupport::Concern
 
     def conforms?
-      ActiveConformity::ObjectValidator.new(self, aggregate_conformity_set).conforms?
+      new_validator.conforms?
     end
 
     def conformity_errors
-      ActiveConformity::ObjectValidator.new(self, aggregate_conformity_set).errors.messages
-    end
-
-    def associations
-      @associations ||= self.class.reflect_on_all_associations
-      @associations
-    end
-
-    def conformable_references
-      Conformable.where(conformist_type: self.class.name )
-      .pluck(:conformable_type).uniq.flat_map do |c_type|
-        associations.detect do |a|
-          name = a.klass.name rescue nil # need to understand this too
-          name == c_type
-        end
-      end.flat_map{|relation| self.send(relation.name) }
+      new_validator.errors.messages
     end
 
     def aggregate_conformity_set
-      # still aren't finding custom validation methods
-      acs ={}
+      acs = {}
       return acs if !conformable_references.any? #need to think about this a little more
       conformable_references.each do |c|
-        c = ActiveConformity::Conformable.find_by!(conformable_id: c.id, conformable_type: c.class.name).conformity_set
+        # This could be more efficient with some advanced sql techniques
+        # Also need indexes on these
+        c = @conformables_for_class.find_by!(conformable_id: c.id, conformable_type: c.class.name).conformity_set
         c = JSON.parse(c) if c.is_a?(String)
         acs.merge!(c)
       end
       acs
+    end
+
+    def new_validator
+      ActiveConformity::ObjectValidator.new(self, aggregate_conformity_set)
+    end
+
+    def conformable_references
+      self.class.reflect_on_all_associations.map do |assoc|
+        self.send(assoc.name) if conformable_types.include?(assoc.klass.name) rescue nil
+      end
+    end
+
+    def conformable_types
+      return @conformable_types if defined?(@conformable_types)
+      @conformable_types = conformables_for_class.pluck(:conformable_type)
+      @conformable_types
+    end
+
+    def conformables_for_class
+      return @conformables_for_class if defined?(@conformables_for_class)
+      @conformables_for_class = Conformable.where(conformist_type: self.class.name)
+      @conformables_for_class
     end
   end
 end

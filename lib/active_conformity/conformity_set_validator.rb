@@ -15,7 +15,6 @@ class ConformitySetValidator < ActiveModel::EachValidator
     rescue
       return add_errors "#{conformity_set_value} cannot be parsed to a hash!"
     end
-
     conformity_set_value.each do |attribute, value|
       return validate_custom_method(value) if attribute.to_sym == :method
       validate_attr_based_validations(attribute, value)
@@ -64,8 +63,9 @@ class ConformitySetValidator < ActiveModel::EachValidator
   end
 
   def conformists_attributes
+    puts
     if !conformable.conformist_type.constantize.respond_to?(:column_names)
-      raise "#{conformist} is not a an active record model!"
+      raise "#{conformable.conformist_type} is not a valid conformist, must be an ActiveRecord Model"
     else
       conformable.conformist_type.constantize.column_names
     end

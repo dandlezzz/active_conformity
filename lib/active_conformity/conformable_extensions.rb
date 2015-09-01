@@ -24,6 +24,21 @@ module ActiveConformity
       acs
     end
 
+    def conformable
+      @conformable ||= Conformable.find_by(conformable_id: self.id, conformable_type: self.class.name)
+      @conformable
+    end
+
+    def add_conformity_set!(conformity_set = {}, conformist_type)
+      conformable_attrs = {conformable_id: self.id, conformable_type: self.class.name, conformist_type: conformist_type}
+      @conformable = Conformable.find_by(conformable_attrs)
+      unless @conformable
+        @conformable = Conformable.new(conformable_attrs)
+      end
+      @conformable.add_conformity_set(conformity_set)
+      @conformable.save!
+    end
+
     def new_validator
       ActiveConformity::ObjectValidator.new(self, aggregate_conformity_set)
     end

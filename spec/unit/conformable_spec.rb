@@ -19,21 +19,23 @@ RSpec.describe ActiveConformity::Conformable do
   describe "adding conformity set" do
     it "should add the conformity set to the existing conformable set" do
       @conformable.add_conformity_set({title: {length: {minimum: 10}}})
+      @conformable.save!
       @conformable.reload
       expect(@conformable.conformity_set).to eq(
                         {
                           content: { length: { minimum: 50 } },
                           title: { length: { minimum: 10 }  }
-                        }.to_json)
+                        })
     end
     it "should update existing validations the conformity set to the existing conformable set" do
       @conformable.add_conformity_set({title: {length: {minimum: 100}}})
+      @conformable.save!
       @conformable.reload
       expect(@conformable.conformity_set).to eq(
                         {
                           content: { length: { minimum: 50 } },
                           title: { length: { minimum: 100 }  }
-                        }.to_json)
+                        })
     end
   end
 end

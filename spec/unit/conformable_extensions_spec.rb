@@ -36,4 +36,20 @@ RSpec.describe ActiveConformity::ConformableExtensions do
       expect(@dummy1.conformable_references).to eq [@dummy_type1]
     end
   end
+
+  describe "#conformable" do
+    it "returns the conformable_reference for the conformable" do
+      expect(@dummy_type1.conformable).to eq(@conformable1)
+    end
+  end
+
+  describe "adding a conformity set" do
+    it "add a conformity set to a conformist" do
+      ActiveConformity::Conformable.where(conformable_id: @dummy_type1.id).delete_all
+      @dummy_type1.add_conformity_set!({title: { length: {minimum: 0, maximum: 10} } }.to_json, @dummy1.class.name)
+      @dummy_type1.reload
+      expect(@dummy_type1.conformable.conformity_set).to eq({title: { length: {minimum: 0, maximum: 10} } })
+    end
+  end
+
 end

@@ -6,26 +6,23 @@ RSpec.describe ActiveConformity::ObjectValidator do
     @obj = Dummy.create!(title:"DumbDumb", views: 2, content: "hello")
     @conformity_set =  {content: { presence: true }}
     @object_validator = ActiveConformity::ObjectValidator.new(@obj,@conformity_set)
-    module ActiveConformity
-      module CustomValidationMethods
-        def content_all_caps?
-          if obj.content == obj.content.upcase
-            return true
-          else
-            errors.add(:content, "is not all caps")
-          end
+    module ActiveConformityCustomMethods
+      def content_all_caps?
+        if obj.content == obj.content.upcase
+          return true
+        else
+          errors.add(:content, "is not all caps")
         end
+      end
 
-        def content_is?(str)
-          if obj.content == str
-            return true
-          else
-            errors.add(:content, "is not #{str}")
-          end
+      def content_is?(str)
+        if obj.content == str
+          return true
+        else
+          errors.add(:content, "is not #{str}")
         end
       end
     end
-  end
 
   describe "#initialize" do
 

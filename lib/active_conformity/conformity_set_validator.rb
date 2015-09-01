@@ -30,7 +30,7 @@ class ConformitySetValidator < ActiveModel::EachValidator
   end
 
   def custom_method_is_defined?(method_name)
-    ActiveConformity::CustomValidationMethods.public_instance_methods.include?(method_name.to_sym)
+    ActiveConformityCustomMethods.public_instance_methods.include?(method_name.to_sym)
   end
 
   def custom_method_error(method_name)

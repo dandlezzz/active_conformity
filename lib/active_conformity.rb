@@ -8,3 +8,4 @@ require "active_conformity/conformable_extensions"
 
 
 module ActiveConformity; end
+module ActiveConformityCustomMethods; end

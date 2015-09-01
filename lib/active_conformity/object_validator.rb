@@ -1,24 +1,24 @@
 require 'active_model/validations'
-require 'active_conformity/custom_validation_methods'
 module ActiveConformity
   class DynamicValidator
-     include ActiveModel::Validations
-     include ActiveConformityCustomMethods
-     attr_reader :obj
+    include ActiveModel::Validations
+    include ::ActiveConformityCustomMethods
 
-     def initialize(obj)
-        @obj = obj
-        set_accessors
-     end
+    attr_reader :obj
 
-     def set_accessors
-       obj.attributes.each do |k,v|
+    def initialize(obj)
+      @obj = obj
+      set_accessors
+    end
+
+    def set_accessors
+      obj.attributes.each do |k,v|
         self.class_eval do
           attr_accessor k.to_sym
         end
         instance_variable_set("@#{k}", v)
       end
-     end
+    end
   end
 
   class ObjectValidator

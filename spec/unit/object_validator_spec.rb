@@ -23,6 +23,7 @@ RSpec.describe ActiveConformity::ObjectValidator do
         end
       end
     end
+  end
 
   describe "#initialize" do
 

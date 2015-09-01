@@ -34,7 +34,7 @@ class ConformitySetValidator < ActiveModel::EachValidator
   end
 
   def custom_method_error(method_name)
-    add_errors("#{method_name} is not defined in ActiveConformity::CustomValidationMethods!")
+    add_errors("#{method_name} is not defined in ActiveConformityCustomMethods!")
   end
 
   def validate_custom_method(method_name)

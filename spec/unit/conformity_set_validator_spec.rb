@@ -14,11 +14,9 @@ RSpec.describe ConformitySetValidator do
     @conformable.conformable_type = @dummy_type.class.name
     @conformable.conformist_type = @dummy.class.name
     @conformable.save
-    module ActiveConformity
-      module CustomValidationMethods
-        def dummy_custom
-          return true
-        end
+    module ActiveConformityCustomMethods
+      def dummy_custom
+        return true
       end
     end
   end

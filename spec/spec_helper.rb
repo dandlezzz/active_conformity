@@ -2,6 +2,7 @@ $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'yaml'
 require 'active_record'
 require 'active_support/all'
+require 'support/active_conformity_custom_methods'
 require 'active_conformity'
 require 'support/model_reconstruction'
 

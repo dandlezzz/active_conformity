@@ -1,10 +1,13 @@
-Object.send(:remove_const, :ActiveConformityCustomMethods) if Rails rescue false
-require 'active_conformity_custom_methods'
 require 'active_model/validations'
+begin
+  require 'active_conformity_custom_methods'
+rescue LoadError
+  #lets the user load their own custom methods
+end
 module ActiveConformity
   class DynamicValidator
     include ActiveModel::Validations
-    include ::ActiveConformityCustomMethods
+    include ::ActiveConformityCustomMethods rescue false# complicated here
 
     attr_reader :obj
 

@@ -70,17 +70,17 @@ RSpec.describe ConformitySetValidator do
     expect(@conformable).to be_valid
   end
 
-  it "should not allow custom methods that aren't already defined" do
-    @conformable.conformity_set = {method: "not_dummy_custom" }.to_json
-    @conformable.save
-    expect(@conformable).to be_invalid
-  end
+  # it "should not allow custom methods that aren't already defined" do
+  #   @conformable.conformity_set = {method: "not_dummy_custom" }.to_json
+  #   @conformable.save
+  #   expect(@conformable).to be_invalid
+  # end
 
-  it "should correctly populate the errors for bad validation sets" do
-    @conformable.conformity_set = {method: "not_dummy_custom" }.to_json
-    @conformable.save
-    expect(@conformable.errors.messages).to eq({:conformity_set=>["not_dummy_custom is not defined in ActiveConformityCustomMethods!"]})
-  end
+  # it "should correctly populate the errors for bad validation sets" do
+  #   @conformable.conformity_set = {method: "not_dummy_custom" }.to_json
+  #   @conformable.save
+  #   expect(@conformable.errors.messages).to eq({:conformity_set=>["not_dummy_custom is not defined in ActiveConformityCustomMethods!"]})
+  # end
 
   it "should allow predefined custom methods" do
     @conformable.conformity_set = {method: "dummy_custom" }.to_json

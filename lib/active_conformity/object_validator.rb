@@ -1,3 +1,5 @@
+Object.send(:remove_const, :ActiveConformityCustomMethods) if Rails rescue false
+require 'active_conformity_custom_methods'
 require 'active_model/validations'
 module ActiveConformity
   class DynamicValidator

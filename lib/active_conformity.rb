@@ -1,4 +1,3 @@
-require "active_conformity_custom_methods"
 require "active_conformity/version"
 require "active_conformity/reifiers"
 require "active_conformity/object_validator"

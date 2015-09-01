@@ -1,3 +1,3 @@
 module ActiveConformity
-  VERSION = "0.1.71"
+  VERSION = "0.1.73"
 end

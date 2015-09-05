@@ -2,9 +2,6 @@ class Dummy < ActiveRecord::Base
   belongs_to :dummy_type
 end
 
-class DummyType < ActiveRecord::Base
-end
-
 module ModelReconstruction
   def reset_class class_name
     Object.send(:remove_const, class_name) rescue nil
@@ -37,6 +34,7 @@ module ModelReconstruction
       table.column :system_name, :string
       table.column :name, :string
     end
+
     ActiveRecord::Base.connection.create_table :conformables, force: true do |table|
       table.column :conformable_type, :string
       table.column :conformable_id, :integer

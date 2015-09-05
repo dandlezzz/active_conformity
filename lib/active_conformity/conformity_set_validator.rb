@@ -54,6 +54,8 @@ class ConformitySetValidator < ActiveModel::EachValidator
     true
   end
 
+  #conformity set by conformable
+
   def is_a_conformists_attribute?(str)
     str = str.to_s
     if !conformists_attributes.include?(str)
@@ -63,7 +65,6 @@ class ConformitySetValidator < ActiveModel::EachValidator
   end
 
   def conformists_attributes
-    puts
     if !conformable.conformist_type.constantize.respond_to?(:column_names)
       raise "#{conformable.conformist_type} is not a valid conformist, must be an ActiveRecord Model"
     else

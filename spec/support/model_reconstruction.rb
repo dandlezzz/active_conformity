@@ -2,6 +2,9 @@ class Dummy < ActiveRecord::Base
   belongs_to :dummy_type
 end
 
+class DummyType < ActiveRecord::Base
+end
+
 module ModelReconstruction
   def reset_class class_name
     Object.send(:remove_const, class_name) rescue nil

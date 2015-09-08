@@ -15,11 +15,11 @@ RSpec.describe ActiveConformity::ObjectValidator do
         end
       end
 
-      def content_is?(str)
-        if obj.content == str
+      def content_is?
+        if obj.content == method_args[:string]
           return true
         else
-          errors.add(:content, "is not #{str}")
+          errors.add(:content, "does not match #{method_args[:string]}")
         end
       end
     end
@@ -68,7 +68,6 @@ RSpec.describe ActiveConformity::ObjectValidator do
       expect(@object_validator.conforms?).to be false
     end
 
-
     it "provides support for regex validations on failure" do
       @obj.content = "hi there"
       @object_validator.conformity_set = {content: {format: {with: /\d+/} } }
@@ -85,6 +84,18 @@ RSpec.describe ActiveConformity::ObjectValidator do
       @object_validator.conformity_set = {method: "content_all_caps?"}
       @obj.content = "THIS IS GOOD"
       expect(@object_validator.conforms?).to be true
+    end
+
+    it "supports custom validation method with arguments on success" do
+      @object_validator.conformity_set = {method: {name: "content_is?", arguments: { string: "THIS IS GOOD"} } }
+      @obj.content = "THIS IS GOOD"
+      expect(@object_validator.conforms?).to be true
+    end
+
+    it "supports custom validation method with arguments on failure" do
+      @object_validator.conformity_set = {method: {name: "content_is?", arguments: { string: "THIS ISNT GOOD"} } }
+      @obj.content = "THIS IS GOOD"
+      expect(@object_validator.conforms?).to be false
     end
 
     it "supports custom validation methods on failure" do

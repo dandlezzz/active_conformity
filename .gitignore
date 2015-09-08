@@ -7,5 +7,4 @@
 /pkg/
 /spec/reports/
 /tmp/
-spec/debug.log
-
+/spec/*.log

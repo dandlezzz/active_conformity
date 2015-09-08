@@ -10,9 +10,11 @@ module ActiveConformity
     include ::ActiveConformityCustomMethods rescue false# complicated here
 
     attr_reader :obj
+    attr_accessor :method_args
 
     def initialize(obj)
       @obj = obj
+      @method_args = {}
       set_accessors
     end
 
@@ -57,20 +59,31 @@ module ActiveConformity
     end
 
     def check_conformity
+      @validator = @validator_klass.new(@obj)
       @conformity_set.each do |attr,rule|
         call_validation_method(attr, rule)
       end
-      @validator = @validator_klass.new(@obj)
       @conforms = @validator.valid?
       @errors = @validator.errors
     end
 
     def call_validation_method(attr, rule)
       if attr.to_sym == :method
-        @validator_klass.validate rule.to_sym
+        if rule.is_a?(String)
+          rule_name = rule.to_sym
+        elsif rule.is_a?(Hash)
+          rule_name = rule[:name].to_sym
+          set_custom_method_arguments(rule[:arguments])
+        end
+
+        @validator_klass.validate rule_name
       else
         @validator_klass.validates attr, reify_rule(rule)
       end
+    end
+
+    def set_custom_method_arguments(args_hash)
+      args_hash.each{ |k,v| @validator.method_args[k] = v }
     end
   end
 end

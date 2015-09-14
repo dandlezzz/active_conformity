@@ -59,7 +59,7 @@ module ActiveConformity
 
     def add_self_to_conformable_references
       [self] if Conformable.where(conformable_id: self.id,
-      conformable_type: self.class.name, conformist_type: self.class.name).any?
+      conformable_type: self.class.name).any?
     end
 
     def conformable_types

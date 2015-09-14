@@ -1,8 +1,19 @@
 class Dummy < ActiveRecord::Base
   belongs_to :dummy_type
+  has_many :dummy_options
 end
 
 class DummyType < ActiveRecord::Base
+
+end
+
+class DummyOption < ActiveRecord::Base
+  belongs_to :dummy
+  belongs_to :option
+end
+
+class Option < ActiveRecord::Base
+
 end
 
 module ModelReconstruction
@@ -31,6 +42,17 @@ module ModelReconstruction
       table.column :content, :string
       table.column :views, :integer
       table.column :dummy_type_id, :integer
+    end
+
+    ActiveRecord::Base.connection.create_table :options, force: true do |table|
+      table.column :dummy_id, :integer
+      table.column :option_id, :integer
+    end
+
+    ActiveRecord::Base.connection.create_table :dummy_options, force: true do |table|
+      table.column :dummy_id, :integer
+      table.column :option_id, :integer
+      table.column :value, :string
     end
 
     ActiveRecord::Base.connection.create_table :dummy_types, force: true do |table|

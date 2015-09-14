@@ -3,8 +3,25 @@ module ActiveConformity
   module ConformableExtensions
     extend ActiveSupport::Concern
 
+    module ClassMethods
+      @dependents = []
+
+      def dependents
+        @dependents
+      end
+
+      def conforming_dependents(*dependents)
+        dependents.each do |d|
+          if !self.reflect_on_all_associations.map(&:name).include?(d)
+            raise "NOT A VALID DEPENDENT, MUST BE ONE OF THE MODEL'S ASSOCIATIONS!"
+          end
+        end
+        @dependents = dependents
+      end
+    end
+
     def conforms?
-      validator.conforms?
+      validator.conforms? && conforming_dependents_conform?
     end
 
     def conformity_errors
@@ -22,6 +39,13 @@ module ActiveConformity
         acs.merge!(c)
       end
       acs
+    end
+
+    def conforming_dependents_conform?
+      return true if self.class.dependents.blank?
+      !self.class.dependents.map do |dependent_association|
+        self.send(dependent_association)
+      end.flatten.map(&:conforms?).uniq.include?(false)
     end
 
     def conformity_sets_by_reference

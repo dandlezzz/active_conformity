@@ -43,7 +43,7 @@ module ActiveConformity
 
     def method_missing(m, *args, &block)
       if m.to_sym == :conformity_set && !self.class.column_names.include?(m.to_s)
-        conformable.conformity_set
+        conformable.try(:conformity_set)
       else
         super
       end

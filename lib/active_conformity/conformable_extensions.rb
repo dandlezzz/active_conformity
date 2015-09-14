@@ -17,7 +17,7 @@ module ActiveConformity
       conformable_references.each do |c|
         # This could be more efficient with some advanced sql techniques
         # Also need indexes on these
-        c = @conformables_for_class.find_by!(conformable_id: c.id, conformable_type: c.class.name).conformity_set
+        c = Conformable.find_by!(conformable_id: c.id, conformable_type: c.class.name).conformity_set
         c = JSON.parse(c) if c.is_a?(String)
         acs.merge!(c)
       end

@@ -100,7 +100,7 @@ module ActiveConformity
   end
 end
 
-
+ActiveRecord::Base.send(:include, ActiveConformity::ConformableExtensions)
 ActiveRecord::Base.descendants.each do |d|
     next if d ==  ActiveConformity::Conformable
     d.send(:define_method, :conformity_set) {conformable.conformity_set}

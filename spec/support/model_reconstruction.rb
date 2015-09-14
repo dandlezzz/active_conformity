@@ -12,12 +12,6 @@ end
 
 class Option < ActiveRecord::Base ;end
 
-ActiveRecord::Base.send(:include, ActiveConformity::ConformableExtensions)
-ActiveRecord::Base.descendants.each do |d|
-    next if d ==  ActiveConformity::Conformable
-    d.send(:define_method, :conformity_set) {conformable.conformity_set}
-end
-
 module ModelReconstruction
   def reset_class class_name
     Object.send(:remove_const, class_name) rescue nil

@@ -41,6 +41,14 @@ module ActiveConformity
       acs
     end
 
+    def method_missing(m, *args, &block)
+      if m.to_sym == :conformity_set && !self.class.column_names.include?(m.to_s)
+        conformable.conformity_set
+      else
+        super
+      end
+    end
+
     def conforming_dependents_conform?
       return true if self.class.dependents.blank?
       !self.class.dependents.map do |dependent_association|
@@ -100,8 +108,4 @@ module ActiveConformity
   end
 end
 
-ActiveRecord::Base.send(:include, ActiveConformity::ConformableExtensions)
-ActiveRecord::Base.descendants.each do |d|
-    next if d ==  ActiveConformity::Conformable
-    d.send(:define_method, :conformity_set) {conformable.conformity_set}
-end
+ActiveRecord::Base.include ActiveConformity::ConformableExtensions

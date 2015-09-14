@@ -3,17 +3,19 @@ class Dummy < ActiveRecord::Base
   has_many :dummy_options
 end
 
-class DummyType < ActiveRecord::Base
-
-end
+class DummyType < ActiveRecord::Base ; end
 
 class DummyOption < ActiveRecord::Base
   belongs_to :dummy
   belongs_to :option
 end
 
-class Option < ActiveRecord::Base
+class Option < ActiveRecord::Base ;end
 
+ActiveRecord::Base.send(:include, ActiveConformity::ConformableExtensions)
+ActiveRecord::Base.descendants.each do |d|
+    next if d ==  ActiveConformity::Conformable
+    d.send(:define_method, :conformity_set) {conformable.conformity_set}
 end
 
 module ModelReconstruction

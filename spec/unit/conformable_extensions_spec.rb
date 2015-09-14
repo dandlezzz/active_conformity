@@ -56,6 +56,12 @@
       end
     end
 
+    describe "conformity_set" do
+      it "when called on a conformable references gets the conformables conformity set" do
+        expect(@dummy_type1.conformity_set).to eq({content: { presence: true } })
+      end
+    end
+
     describe "#conformable" do
       it "returns the conformable_reference for the conformable" do
         expect(@dummy_type1.conformable).to eq(@conformable1)

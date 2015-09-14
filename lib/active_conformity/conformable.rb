@@ -18,8 +18,17 @@ module ActiveConformity
       end
     end
 
-    def remove_validations(attr)
-      # todo
+    def remove_coformity_rule(attr)
+      conformity_set = JSON.parse(self.conformity_set) rescue self.conformity_set
+      conformity_set.delete(attr) do
+        raise "no rule found for #{attr.to_s}"
+      end
+      self.conformity_set = conformity_set.to_json
+    end
+
+    def remove_coformity_rule!(attr)
+      remove_coformity_rule(attr)
+      save!
     end
   end
 end

@@ -35,6 +35,16 @@ RSpec.describe ActiveConformity::ConformableExtensions do
     it "returns all of the classes which define how the model conforms" do
       expect(@dummy1.conformable_references).to eq [@dummy_type1]
     end
+
+    it "returns all of the classes which define how the model conforms and doesn't disregard self conformity" do
+      @conformable1 = ActiveConformity::Conformable.create!(
+        conformity_set:{content: { presence: true } }.to_json,
+        conformable_id: @dummy1.id,
+        conformable_type: @dummy1.class.name,
+        conformist_type: @dummy1.class.name
+      )
+      expect(@dummy1.conformable_references).to eql([@dummy_type1,  @dummy1])
+    end
   end
 
   describe "#conformable" do

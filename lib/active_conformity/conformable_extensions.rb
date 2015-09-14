@@ -47,9 +47,19 @@ module ActiveConformity
     end
 
     def conformable_references
+      [conformable_references_from_associations + add_self_to_conformable_references.to_a]
+      .flatten.compact.uniq
+    end
+
+    def conformable_references_from_associations
       self.class.reflect_on_all_associations.map do |assoc|
         self.send(assoc.name) if conformable_types.include?(assoc.klass.name) rescue nil
       end.flatten.compact.uniq
+    end
+
+    def add_self_to_conformable_references
+      [self] if Conformable.where(conformable_id: self.id,
+      conformable_type: self.class.name, conformist_type: self.class.name).any?
     end
 
     def conformable_types

@@ -38,4 +38,36 @@ RSpec.describe ActiveConformity::Conformable do
                         })
     end
   end
+
+  describe "removing a conformity set rule" do
+    it "shold remove the entire conformity set rule specified by the top level key" do
+      @conformable.add_conformity_set({title: {length: {minimum: 100}}})
+      @conformable.save!
+      @conformable.reload
+      @conformable.remove_coformity_rule(:title)
+      @conformable.save!
+      expect(@conformable.conformity_set).to eq(
+                        {
+                          content: { length: { minimum: 50 } }
+                        })
+    end
+    it "should raise an error if the top level key is not found" do
+      @conformable.add_conformity_set({title: {length: {minimum: 100}}})
+      @conformable.save!
+      @conformable.reload
+      expect{@conformable.remove_coformity_rule(:no_title)}.to raise_error("no rule found for no_title")
+    end
+
+    it "appending a bang will run a save!" do
+      @conformable.add_conformity_set({title: {length: {minimum: 100}}})
+      @conformable.save!
+      @conformable.reload
+      @conformable.remove_coformity_rule!(:title)
+      @conformable.reload
+      expect(@conformable.conformity_set).to eq(
+                        {
+                          content: { length: { minimum: 50 } }
+                        })
+    end
+  end
 end

@@ -99,3 +99,9 @@ module ActiveConformity
     end
   end
 end
+
+
+ActiveRecord::Base.descendants.each do |d|
+    next if d ==  ActiveConformity::Conformable
+    d.send(:define_method, :conformity_set) {conformable.conformity_set}
+end

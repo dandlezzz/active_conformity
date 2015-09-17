@@ -1,8 +1,6 @@
 # ActiveConformity
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/active_conformity`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Your favorite rails validations driven not by code but by your data.
 
 ## Installation
 
@@ -22,7 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+ActiveConformity comes with a helpful install generator.
+
+	$ rails g install:active_conformity
+
+ This will generate a migration for you that creates the conformables table. The table responsible for storing all of the validation data.
 
 ## Development
 

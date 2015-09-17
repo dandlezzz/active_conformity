@@ -50,10 +50,13 @@ module ActiveConformity
     end
 
     def conforming_dependents_conform?
-      return true if self.class.dependents.blank?
-      !self.class.dependents.map do |dependent_association|
-        self.send(dependent_association)
-      end.flatten.map(&:conforms?).uniq.include?(false)
+      return true if dependents.blank?
+      !dependents.flat_map { |da| self.send(da)}
+      .any?{ |da| !da.conforms? }
+    end
+
+    def dependents
+      self.class.dependents
     end
 
     def conformity_sets_by_reference
@@ -84,9 +87,9 @@ module ActiveConformity
     end
 
     def conformable_references_from_associations
-      self.class.reflect_on_all_associations.map do |assoc|
+      self.class.reflect_on_all_associations.flat_map do |assoc|
         self.send(assoc.name) if conformable_types.include?(assoc.klass.name) rescue nil
-      end.flatten.compact.uniq
+      end
     end
 
     def add_self_to_conformable_references

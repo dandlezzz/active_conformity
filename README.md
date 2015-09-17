@@ -1,4 +1,5 @@
 # ActiveConformity
+[![Code Climate](https://codeclimate.com/github/dandlezzz/active_conformity/badges/gpa.svg)](https://codeclimate.com/github/dandlezzz/active_conformity)
 
 Your favorite rails validations driven not by code but by your data.
 

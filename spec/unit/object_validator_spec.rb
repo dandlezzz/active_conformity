@@ -80,6 +80,14 @@ RSpec.describe ActiveConformity::ObjectValidator do
       expect(@object_validator.conforms?).to be true
     end
 
+    # it "should raise an error for regex timeouts" do
+    #   bad_regex = "(?-mix:^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$)"
+    #   @obj.content = "https://sub.app.com/users/id123?hello=world"
+    #   @obj.save!
+    #   @object_validator.conformity_set = {content: {format: {with: bad_regex} } }
+    #   expect{@object_validator.conforms?}.to raise_error
+    # end
+
     it "supports custom validation methods on success" do
       @object_validator.conformity_set = {method: "content_all_caps?"}
       @obj.content = "THIS IS GOOD"

@@ -7,13 +7,9 @@ module ActiveConformity
     end
 
     def reify_regex(rule)
-      return rule unless rule.is_a?(Hash)
-      if rule["format"]
-        rule["format"]["with"] = Regexp.new(rule["format"]["with"])
-      elsif rule[:format]
-        rule[:format][:with] = Regexp.new(rule[:format][:with])
-      end
-      return rule
+      return rule unless rule.is_a?(Hash) && rule[:format]
+      rule[:format][:with] = Regexp.new(rule[:format][:with])
+      rule
     end
   end
 end

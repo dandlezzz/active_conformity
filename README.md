@@ -25,7 +25,54 @@ ActiveConformity comes with a helpful install generator.
 
 	$ rails g active_conformity:install
 
- This will generate a migration for you that creates the conformables table. The table responsible for storing all of the validation data.
+ This will generate a migration for you that creates the conformables table. The table responsible for storing all of the validation data. Additionally, it will create a module in your lib file where you can write custom validation methods.
+
+
+ ActiveConformity is for use when validating if objects are of a specific composition.
+ For example, lets say you have the following model structure:
+
+ ```
+ class Car
+ 	has_one :engine
+ 	#attrs :size
+ end
+
+ class Engine
+ 	belongs_to :car
+ end
+ ```
+
+In this example you have a database full of different engines and wheelsets. Each car model has a link to these things. If you want ensure that the diesel engine is on a car of a size 2000 you have a couple of options.
+
+```
+class Car
+	has_one :engine
+    validate :proper_engine
+
+    def proper_engine
+    	return true if size >= 2000 && engine.name == "diesel"
+        errors.add("car is too small for diesel engine")
+    end
+end
+
+```
+
+This works but can become very complex if you have lots of engines and even more complicated conditions. ActiveConformity provides a way to add these conditions to your database, as json.
+
+```
+diesel_engine = Engine.find_by(name: "diesel")
+diesel_engine.add_conformity_set!( {size: {:numericality => { :greater_than => 2000} } }, conformist_type: "Car")
+
+car1 = Car.create!(size: 2000, engine: diesel_engine)
+car1.conforms? # true
+car2 = Car.create!(size: 1000, engine: diesel_engine)
+car2.conforms? # false
+car2.conformity_errors # [{size: "car is too small for diesel engine"}]
+
+```
+
+The add_conformity_set! method saves the json to your database any time  a car has a diesel engine, calling .conforms? will check the car's size to ensure it can accomodate the diesel engine.
+
 
 ## Development
 

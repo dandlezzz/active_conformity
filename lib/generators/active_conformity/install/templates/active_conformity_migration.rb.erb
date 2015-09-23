@@ -1,0 +1,15 @@
+class <%= migration_class_name %> < ActiveRecord::Migration
+  def self.up
+    create_table :conformables do |t|
+      t.string :conformist_type
+      t.integer :conformable_id
+      t.string :conformable_type
+      t.<%=conformity_set_type%> :conformity_set
+
+    end
+  end
+
+  def self.down
+    drop_table :conformables
+  end
+end

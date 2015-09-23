@@ -23,7 +23,7 @@ Or install it yourself as:
 
 ActiveConformity comes with a helpful install generator.
 
-	$ rails g install:active_conformity
+	$ rails g active_conformity:install
 
  This will generate a migration for you that creates the conformables table. The table responsible for storing all of the validation data.
 

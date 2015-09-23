@@ -9,12 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["dandlezzz"]
   spec.email         = ["danm@workwithopal.com"]
 
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
-  end
 
-  spec.summary       = "Shared validations for models and your apis"
-  spec.description   = "Store rails validations as JSON to expose to your apis and share amongst ActiveRecord models"
+  spec.summary       = "Database driven validations."
+  spec.description   = "Store Rails validations as JSON to serve via api and drive complex validation logic."
   spec.homepage      = "http://www.github.com/dandlezzz/active_conformity"
   spec.license       = "MIT"
 

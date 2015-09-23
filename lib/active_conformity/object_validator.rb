@@ -18,6 +18,8 @@ module ActiveConformity
       set_accessors
     end
 
+    private
+
     def set_accessors
       obj.attributes.each do |k,v|
         self.class_eval do
@@ -45,17 +47,25 @@ module ActiveConformity
     def conforms?
       @conforms = true if @conformity_set.blank?
       check_conformity
+      remove_dynamic_validator
       @conforms
+    end
+
+    def errors
+      check_conformity
+      remove_dynamic_validator
+      @errors
+    end
+
+    private
+
+    def remove_dynamic_validator
+      Object.send(:remove_const, @validator_klass.name.to_sym)
     end
 
     def create_validator_klass
       validator_klass_name = (0...50).map { ('A'..'Z').to_a[rand(26)] }.join
       @validator_klass = Object.const_set(validator_klass_name, Class.new(DynamicValidator))
-    end
-
-    def errors
-      check_conformity
-      @errors
     end
 
     def check_conformity

@@ -41,22 +41,10 @@ module ActiveConformity
       acs
     end
 
-    def method_missing(m, *args, &block)
-      if m.to_sym == :conformity_set && !self.class.column_names.include?(m.to_s)
-        conformable.try(:conformity_set)
-      else
-        super
-      end
-    end
-
     def conforming_dependents_conform?
       return true if dependents.blank?
       !dependents.flat_map { |da| self.send(da)}
       .any?{ |da| !da.conforms? }
-    end
-
-    def dependents
-      self.class.dependents
     end
 
     def conformity_sets_by_reference
@@ -77,13 +65,27 @@ module ActiveConformity
       @conformable.save!
     end
 
-    def validator
-      ActiveConformity::ObjectValidator.new(self, aggregate_conformity_set)
-    end
-
     def conformable_references
       [conformable_references_from_associations + add_self_to_conformable_references.to_a]
       .flatten.compact.uniq
+    end
+
+    private
+
+    def dependents
+      self.class.dependents
+    end
+
+    def method_missing(m, *args, &block)
+      if m.to_sym == :conformity_set && !self.class.column_names.include?(m.to_s)
+        conformable.try(:conformity_set)
+      else
+        super
+      end
+    end
+
+    def validator
+      ActiveConformity::ObjectValidator.new(self, aggregate_conformity_set)
     end
 
     def conformable_references_from_associations

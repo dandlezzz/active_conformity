@@ -21,6 +21,8 @@ class ConformitySetValidator < ActiveModel::EachValidator
     end
   end
 
+  private
+
   def validate_attr_based_validations(attribute, value)
     is_a_conformists_attribute?(attribute)
     value.each do |rule, constraint|

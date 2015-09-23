@@ -1,0 +1,29 @@
+module ActiveConformityCustomMethods
+
+
+
+end
+
+=begin
+This file is for creating custom methods that you can add to the conformity set
+of a conformable. The object that these methods will run against is availible by
+calling 'obj'. Additionally, you can utilize any of the named arguments that
+were saved in the conformity set.
+
+For example:
+  For a conformable with the conformity_set like:
+
+  { method: { name: 'content_is?', arguments: {string: 'hello world' } } }
+
+  You can define the following method in this module:
+
+  def content_is?
+    if obj.content == method_args[:string]
+      return true
+    else
+      errors.add(:content, "does not match #{method_args[:string]}")
+    end
+  end
+
+  Be sure to follow the rails convention of adding errors in the false case!
+=end

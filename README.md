@@ -42,7 +42,7 @@ ActiveConformity comes with a helpful install generator.
  end
  ```
 
-In this example you have a database full of different engines and wheelsets. Each car model has a link to these things. If you want ensure that the diesel engine is on a car of a size 2000 you have a couple of options.
+In this example you have a database full of different engines. Each car model has a link to these things. If you want ensure that the diesel engine is on a car of a size 2000 you have a couple of options.
 
 ```
 class Car

@@ -73,6 +73,34 @@ car2.conformity_errors # [{size: "car is too small for diesel engine"}]
 
 The add_conformity_set! method saves the json to your database any time  a car has a diesel engine, calling .conforms? will check the car's size to ensure it can accomodate the diesel engine.
 
+##
+
+ActiveConformity refers to the objects that tell other objects what do as conformables and the objects that are being told what to do as conformists. In the example above, the car is the conformist and the engine is the conformable.
+
+There are several methods available to inspect what makes an object on conform. In the previous example if you want to see all of the rules the car most conform to you can do the following.
+
+```
+car1.aggregate_conformity_set # {size: {:numericality => { :greater_than => 2000} } }
+```
+
+This shows all of the validations that the model will have to run through when .conforms? is called.
+
+##
+
+In order to debug conformity errors, ActiveConformity provides several methods to query the database in order to get a better understanding of why the object conforms or does not.
+
+```
+car1.conformable_references #returns [diesel_engine]
+```
+The conformable references returns a list of all the objects that the car gets a conformity set from. Additionally, for even more fine grained debugging you can call
+```
+car1.conformity_sets_by_reference # {"Engine id: 1" =>{size: {:numericality => { :greater_than => 2000} } } }
+```
+This returns a complex hash that shows the id of all of the objects mapped to their individual conformity_set.
+
+##
+
+
 
 ## Development
 

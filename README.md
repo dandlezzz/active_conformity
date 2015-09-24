@@ -38,11 +38,11 @@ ActiveConformity comes with a helpful install generator.
  end
 
  class Engine
- 	has_one :car
+
  end
  ```
 
-In this example you have a database full of different engines. Each car model has a link to these things. If you want ensure that the diesel engine is on a car of a size 2000 you have a couple of options.
+In this example you have a database full of different engines. Each car instance has an engine. If you want ensure that the diesel engine is on a car of a size 2000 you have a couple of options.
 
 ```
 class Car
@@ -57,7 +57,7 @@ end
 
 ```
 
-This works but can become very complex if you have lots of engines and even more complicated conditions. ActiveConformity provides a way to add these conditions to your database, as json.
+This works but can become very complex if you have lots of engines and each with their own special requirements of the car. ActiveConformity provides a way to add these conditions to your database, as json, and then run the validations from the persisted json, that json is referred to as a conformity_set.
 
 ```
 diesel_engine = Engine.find_by(name: "diesel")

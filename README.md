@@ -106,6 +106,7 @@ This returns a complex hash that shows the id of all of the objects mapped to th
 
 
 
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
@@ -119,3 +120,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+
+## Help and Inspiration
+Thanks to [Dan Barret](https://github.com/thoughtpunch) who has provided guidance and inspiration for this project.

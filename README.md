@@ -63,8 +63,8 @@ This works but can become very complex if you have lots of engines and each with
 diesel_engine = Engine.find_by(name: "diesel")
 diesel_engine.add_conformity_set!( {size: {:numericality => { :greater_than => 2000} } }, conformist_type: "Car")
 
-car1 = Car.create!(size: 2000, engine: diesel_engine)
-car1.conforms? # true
+car = Car.create!(size: 2000, engine: diesel_engine)
+car.conforms? # true
 car2 = Car.create!(size: 1000, engine: diesel_engine)
 car2.conforms? # false
 car2.conformity_errors # [{size: "car is too small for diesel engine"}]
@@ -84,7 +84,7 @@ ActiveConformity refers to the objects that tell other objects what do as confor
 There are several methods available to inspect what makes an object on conform. In the previous example if you want to see all of the rules the car most conform to you can do the following.
 
 ```
-car1.aggregate_conformity_set # {size: {:numericality => { :greater_than => 2000} } }
+car.aggregate_conformity_set # {:size=> {:numericality => { :greater_than => 2000} } }
 ```
 
 This shows all of the validations that the model will have to run through when .conforms? is called.
@@ -94,11 +94,11 @@ This shows all of the validations that the model will have to run through when .
 In order to debug conformity errors, ActiveConformity provides several methods to query the database in order to get a better understanding of why the object conforms or does not.
 
 ```
-car1.conformable_references #returns [diesel_engine]
+car.conformable_references #returns [diesel_engine]
 ```
 The conformable references returns a list of all the objects that the car gets a conformity set from. Additionally, for even more fine grained debugging you can call
 ```
-car1.conformity_sets_by_reference # {"Engine id: 1" =>{size=> {:numericality => { :greater_than => 2000} } } }
+car.conformity_sets_by_reference # {"Engine id: 1" =>{:size=> {:numericality => { :greater_than => 2000} } } }
 ```
 This returns a complex hash that shows the id of all of the objects mapped to their individual conformity_set.
 

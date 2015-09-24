@@ -33,12 +33,12 @@ ActiveConformity comes with a helpful install generator.
 
  ```
  class Car
- 	has_one :engine
+ 	belongs_to :engine
  	#attrs :size
  end
 
  class Engine
- 	belongs_to :car
+ 	has_one :car
  end
  ```
 
@@ -46,8 +46,8 @@ In this example you have a database full of different engines. Each car model ha
 
 ```
 class Car
-	has_one :engine
-    validate :proper_engine
+	belongs_to :engine
+  validate :proper_engine
 
     def proper_engine
     	return true if size >= 2000 && engine.name == "diesel"

@@ -98,7 +98,7 @@ car1.conformable_references #returns [diesel_engine]
 ```
 The conformable references returns a list of all the objects that the car gets a conformity set from. Additionally, for even more fine grained debugging you can call
 ```
-car1.conformity_sets_by_reference # {"Engine id: 1" =>{size: {:numericality => { :greater_than => 2000} } } }
+car1.conformity_sets_by_reference # {"Engine id: 1" =>{size=> {:numericality => { :greater_than => 2000} } } }
 ```
 This returns a complex hash that shows the id of all of the objects mapped to their individual conformity_set.
 

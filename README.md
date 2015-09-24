@@ -46,7 +46,7 @@ In this example you have a database full of different engines. Each car model ha
 
 ```
 class Car
-	belongs_to :engine
+  belongs_to :engine
   validate :proper_engine
 
     def proper_engine

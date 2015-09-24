@@ -123,4 +123,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 
 ## Help and Inspiration
-Thanks to [Dan Barret](https://github.com/thoughtpunch) who has provided guidance and inspiration for this project.
+Thanks to [Dan Barrett](https://github.com/thoughtpunch) who has provided guidance and inspiration for this project.

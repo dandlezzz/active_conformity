@@ -11,8 +11,9 @@ module ActiveConformity
       end
 
       def conforming_dependents(*dependents)
+        association_names = self.reflect_on_all_associations.map(&:name)
         dependents.each do |d|
-          if !self.reflect_on_all_associations.map(&:name).include?(d)
+          if !association_names.include?(d)
             raise "NOT A VALID DEPENDENT, MUST BE ONE OF THE MODEL'S ASSOCIATIONS!"
           end
         end

@@ -46,7 +46,7 @@ RSpec.describe ConformitySetValidator do
     expect(@conformable).to be_invalid
   end
 
-  it "should invalidate the conformables conformity set the attribute key is not a valid rails attribute" do
+  it "should invalidate the conformables conformity set if the attribute key is not a valid rails attribute" do
     @conformable.conformity_set = {content: { good: true } }.to_json
     @conformable.save
     expect(@conformable).to be_invalid

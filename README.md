@@ -1,4 +1,6 @@
 # ActiveConformity
+
+[![Join the chat at https://gitter.im/dandlezzz/active_conformity](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dandlezzz/active_conformity?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Code Climate](https://codeclimate.com/github/dandlezzz/active_conformity/badges/gpa.svg)](https://codeclimate.com/github/dandlezzz/active_conformity)
 
 Your favorite rails validations driven not by code but by your data.

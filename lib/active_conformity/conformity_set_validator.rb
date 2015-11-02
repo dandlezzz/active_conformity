@@ -56,8 +56,6 @@ class ConformitySetValidator < ActiveModel::EachValidator
     true
   end
 
-  #conformity set by conformable
-
   def is_a_conformists_attribute?(str)
     str = str.to_s
     if !conformists_attributes.include?(str)

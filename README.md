@@ -120,7 +120,7 @@ diesel_engine.remove_coformity_rule!(:size)
 Additionally, if you want to remove all of the conformity sets for a conformable, you can do the following:
 
 ```ruby
-diesel_engine.remove_rules!
+diesel_engine.remove_rules
 ```
 
 ##

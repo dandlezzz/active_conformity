@@ -106,11 +106,25 @@ car.conformity_sets_by_reference # {"Engine id: 1" =>{:size=> {:numericality => 
 ```
 This returns a complex hash that shows the id of all of the objects mapped to their individual conformity_set.
 
+## Removing Conformity sets
+
+ActiveConformity provides two ways to remove a misplaced conformity rule or set from a conformable. For example, if you had incorrectly added an extra conformity set to the diesel engine, you could remove it like so:
+
+```ruby
+# the bad rule
+diesel_engine.add_conformity_set!( {size: {:numericality => { :greater_than => 999999} } }, conformist_type: "Car")
+# remove it this way
+diesel_engine.remove_coformity_rule!(:size)
+
+```
+The bang here will run a save!, without the bang the diesel engine will still need to save in order to persist. Additionally, if you want to remove all of the conformity sets for a conformable, you can do the following:
+
+```ruby
+diesel_engine.remove_rules!
+```
+Again this method can be used with or without a bang!
+
 ##
-
-
-
-
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.

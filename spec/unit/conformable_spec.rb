@@ -39,6 +39,25 @@ RSpec.describe ActiveConformity::Conformable do
     end
   end
 
+  describe "removing all conformity sets " do
+    it "should remove all confomirty set rules from a conformable" do
+      @conformable.add_conformity_set({title: {length: {minimum: 100}}})
+      @conformable.save!
+      @conformable.reload
+      @conformable.remove_rules
+      @conformable.save!
+      expect(@conformable.conformity_set).to eq({})
+    end
+
+    it "should remove all conformity rules and run a save if you append a bang!" do
+      @conformable.add_conformity_set({title: {length: {minimum: 100}}})
+      @conformable.save!
+      @conformable.reload
+      @conformable.remove_rules!
+      expect(@conformable.conformity_set).to eq({})
+    end
+  end
+
   describe "removing a conformity set rule" do
     it "shold remove the entire conformity set rule specified by the top level key" do
       @conformable.add_conformity_set({title: {length: {minimum: 100}}})

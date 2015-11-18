@@ -26,6 +26,15 @@ module ActiveConformity
       self.conformity_set = conformity_set.to_json
     end
 
+    def remove_rules
+      self.conformity_set = {}.to_json
+    end
+
+    def remove_rules!
+      remove_rules
+      save!
+    end
+
     def remove_coformity_rule!(attr)
       remove_coformity_rule(attr)
       save!

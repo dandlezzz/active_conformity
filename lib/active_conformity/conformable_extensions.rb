@@ -71,6 +71,15 @@ module ActiveConformity
       .flatten.compact.uniq
     end
 
+    def remove_conformity_rule!(attr)
+      remove_conformity_rule(attr)
+      conformable.save!
+    end
+
+    def remove_conformity_rule(attr)
+      conformable.remove_coformity_rule(attr)
+    end
+
     private
 
     def dependents

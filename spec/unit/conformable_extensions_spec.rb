@@ -69,11 +69,33 @@
     end
 
     describe "adding a conformity set" do
-      it "add a conformity set to a conformist" do
+      it "add a conformity set to a conformable" do
         ActiveConformity::Conformable.where(conformable_id: @dummy_type1.id).delete_all
         @dummy_type1.add_conformity_set!({title: { length: {minimum: 0, maximum: 10} } }.to_json, @dummy1.class.name)
         @dummy_type1.reload
         expect(@dummy_type1.conformable.conformity_set).to eq({title: { length: {minimum: 0, maximum: 10} } })
+      end
+    end
+
+    describe "removing a conformity set" do
+      it "removes a conformity rule and runs a save with a bang!" do
+        ActiveConformity::Conformable.where(conformable_id: @dummy_type1.id).delete_all
+        @dummy_type1.add_conformity_set!({title: { length: {minimum: 0, maximum: 10} } }.to_json, @dummy1.class.name)
+        @dummy_type1.reload
+        @dummy_type1.remove_conformity_rule!(:title)
+        expect(@dummy_type1.conformable.conformity_set).to eq({})
+        expect(@dummy1.aggregate_conformity_set).to eq({})
+      end
+
+      it "removes a conformity rule" do
+        ActiveConformity::Conformable.where(conformable_id: @dummy_type1.id).delete_all
+        @dummy_type1.add_conformity_set!({title: { length: {minimum: 0, maximum: 10} } }.to_json, @dummy1.class.name)
+        @dummy_type1.reload
+        @dummy_type1.remove_conformity_rule(:title)
+        @dummy_type1.save!
+        @dummy_type1.reload
+        expect(@dummy_type1.conformable.conformity_set).to eq({})
+        expect(@dummy1.aggregate_conformity_set).to eq({})
       end
     end
 

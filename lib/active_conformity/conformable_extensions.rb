@@ -72,12 +72,11 @@ module ActiveConformity
     end
 
     def remove_conformity_rule!(attr)
-      remove_conformity_rule(attr)
-      conformable.save!
+      conformable.remove_coformity_rule!(attr)
     end
 
-    def remove_conformity_rule(attr)
-      conformable.remove_coformity_rule(attr)
+    def remove_rules
+      conformable.remove_rules!
     end
 
     private

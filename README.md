@@ -117,12 +117,11 @@ diesel_engine.add_conformity_set!( {size: {:numericality => { :greater_than => 9
 diesel_engine.remove_coformity_rule!(:size)
 
 ```
-The bang here will run a save!, without the bang the diesel engine will still need to save in order to persist. Additionally, if you want to remove all of the conformity sets for a conformable, you can do the following:
+Additionally, if you want to remove all of the conformity sets for a conformable, you can do the following:
 
 ```ruby
 diesel_engine.remove_rules!
 ```
-Again this method can be used with or without a bang!
 
 ##
 ## Development

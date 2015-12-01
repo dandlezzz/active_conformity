@@ -67,8 +67,16 @@ module ActiveConformity
     end
 
     def conformable_references
-      [conformable_references_from_associations + add_self_to_conformable_references.to_a]
-      .flatten.compact.uniq
+      return @conformable_references if defined? @conformable_references
+      @conformable_references = Set.new
+      @conformable_references.merge conformable_references_from_associations
+      @conformable_references.add add_self_to_conformable_references
+      @conformable_references = @conformable_references.to_a.compact
+    end
+
+    def add_self_to_conformable_references
+      self if Conformable.where(conformable_id: self.id,
+      conformable_type: self.class.name).any?
     end
 
     def remove_conformity_rule!(attr)
@@ -101,11 +109,6 @@ module ActiveConformity
       self.class.reflect_on_all_associations.flat_map do |assoc|
         self.send(assoc.name) if conformable_types.include?(assoc.klass.name) rescue nil
       end
-    end
-
-    def add_self_to_conformable_references
-      [self] if Conformable.where(conformable_id: self.id,
-      conformable_type: self.class.name).any?
     end
 
     def conformable_types

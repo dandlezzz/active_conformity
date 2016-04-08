@@ -83,7 +83,7 @@ Please note, lack of conformity does not prevent persistence as it does with .va
 
 ActiveConformity refers to the objects that tell other objects what do as conformables and the objects that are being told what to do as conformists. In the example above, the car is the conformist and the engine is the conformable.
 
-There are several methods available to inspect what makes an object on conform. In the previous example if you want to see all of the rules the car most conform to you can do the following.
+There are several methods available to inspect what makes an object conform. In the previous example if you want to see all of the rules the car most conform to you can do the following.
 
 ```ruby
 car.aggregate_conformity_set # {:size=> {:numericality => { :greater_than => 2000} } }

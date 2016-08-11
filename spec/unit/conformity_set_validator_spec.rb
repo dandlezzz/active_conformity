@@ -40,6 +40,17 @@ RSpec.describe ConformitySetValidator do
     expect(@conformable).to be_invalid
   end
 
+  it "should support all setter of the class" do
+    @conformable.conformity_set = {dummy_value: {presence: true}}.to_json
+    @conformable.save
+    expect(@conformable).to be_valid
+  end
+
+  it "should support all setter of the class" do
+    @conformable.conformity_set = {dummy_not_value: {presence: true}}.to_json
+    expect {@conformable.save!}.to raise_error
+  end
+
   it "should require the conformity set to be a hash" do
     @conformable.conformity_set = "not a hash"
     @conformable.save

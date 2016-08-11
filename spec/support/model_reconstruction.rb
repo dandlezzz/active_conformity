@@ -1,6 +1,8 @@
 class Dummy < ActiveRecord::Base
   belongs_to :dummy_type
   has_many :dummy_options
+  attr_accessor :dummy_value
+
 end
 
 class DummyType < ActiveRecord::Base ; end

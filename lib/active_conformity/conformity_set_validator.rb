@@ -57,19 +57,16 @@ class ConformitySetValidator < ActiveModel::EachValidator
   end
 
   def is_a_conformists_attribute?(str)
+    # Raise if conformist is not an ActiveRecord model
+    if !(conformable.conformist_type.constantize <= ActiveRecord::Base)
+      raise "#{conformable.conformist_type} is not a valid conformist, must be an ActiveRecord Model"
+    end
+
     str = str.to_s
-    if !conformists_attributes.include?(str)
-        return add_errors("#{str} is not an attribute of #{conformable.conformist_type.to_s}!")
+    if !conformable.conformist_type.constantize.new.respond_to?("#{str}=")
+        return add_errors("#{str} is not a setter for #{conformable.conformist_type.to_s}!")
     end
     return true
-  end
-
-  def conformists_attributes
-    if !conformable.conformist_type.constantize.respond_to?(:column_names)
-      raise "#{conformable.conformist_type} is not a valid conformist, must be an ActiveRecord Model"
-    else
-      conformable.conformist_type.constantize.column_names
-    end
   end
 
   def add_errors(msg)

@@ -21,11 +21,13 @@ module ActiveConformity
     private
 
     def set_accessors
-      obj.attributes.each do |k,v|
+     method_names = [obj.attributes.keys + obj.class.reflect_on_all_associations.map(&:name)].flatten
+     method_names.each do |method|
+        method = method.to_s.gsub("=","")
         self.class_eval do
-          attr_accessor k.to_sym
+          attr_accessor method.to_sym
         end
-        instance_variable_set("@#{k}", v)
+        instance_variable_set("@#{method}", obj.send(method))
       end
     end
   end
